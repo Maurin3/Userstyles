@@ -2,7 +2,7 @@
 @name         Dark Stylus
 @description  Dark theme for Stylus extension.
 @namespace    https://github.com/Maurin3
-@version      1.0.0
+@version      1.0.1
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -55,6 +55,11 @@
     button:not(:disabled):hover,#backup-buttons .dropdown:hover .dropbtn{
         background-color: #555555;
     }
+
+    #message-box-contents, #message-box-buttons{
+        background-color: #222222;
+    }
+
     ::-webkit-scrollbar { 
         background-color: #333333;
     }
