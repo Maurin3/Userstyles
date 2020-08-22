@@ -1,0 +1,79 @@
+/* ==UserStyle==
+@name         Dark Python Docs
+@description  Dark theme for Python Docs.
+@namespace    https://github.com/Maurin3
+@version      1.0.0
+@author       Maurin3
+@homepageURL  https://github.com/Maurin3/Userstyles
+@supportURL   https://github.com/Maurin3/Userstyles/issues
+@updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-python-docs.user.css
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document url-prefix("https://docs.python.org/"){
+html, body{
+    background-color: #222222;
+    color: #FFFFFF;
+}
+.related, .related a {
+    background-color: #222222 !important;
+    color: #FFFFFF !important;
+}
+.sphinxsidebar, .sphinxsidebar a {
+    background-color: #333333 !important;
+    color: #FFFFFF !important;
+}
+.sphinxsidebar h4,.sphinxsidebar h3, .sphinxsidebar li{
+    color: #CCCCCC !important;
+}
+.bodywrapper, .body, .document{
+    background-color: #222222 !important;
+    color: #FFFFFF !important;
+}
+.body h1, .body h2, .body h3, .body h4{
+    background-color: #222222 !important;
+    color: #CCCCCC !important; 
+}
+code.docutils, .admonition{
+    background-color: #4a4a4a !important;
+    color: #CCCCCC !important; 
+}
+pre{
+    background-color: #4a4a4a !important;
+    border-color: #4a4a4a !important;
+}
+pre > .gp{
+    color: #eeaa73 !important;
+}
+pre > .s1, pre > .s2{
+    color: #67b3ff !important;
+}
+pre > .nn, pre > .gt{
+    color: #12b7fb !important;
+}
+pre > .nf{
+    color: #3d74ff !important;
+}
+pre > .kn, pre > .k, pre > .nb, pre > .ow, pre > .mi,pre > .ne{
+    color: #87ee73 !important;
+}
+pre > .n, pre > .p, pre > .o, pre > .go, pre > span {
+    color: #CCCCCC !important;
+}
+pre > .gr{
+    color: #f76060 !important;
+}
+a {
+    color: #5dc5ff !important;
+}
+.field-odd{
+    background-color: #222222 !important;
+}
+#outdated-warning{
+    background-color: #350000 !important;
+    color: #FF8888 !important;
+}
+#sidebarbutton{
+    background-color: #4a4a4a !important;
+}
+
+}

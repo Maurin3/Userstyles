@@ -9,6 +9,9 @@ Some useful userstyles :wink:
 
 | Userstyle                      | Install            | Version                                                                            |
 |--------------------------------|:------------------:|:----------------------------------------------------------------------------------:|
+| Dark Python Docs               | [install][dpd-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.0-C4246A.svg "Version 1.0.0") |
+
+[dpd-raw]: https://github.com/Maurin3/Userstyles/raw/master/dark-python-docs.user.css
 
 ## Updates
 
