@@ -1,2 +1,2 @@
 # Userstyles
-Some useful userscripts :wink:
+Some useful userstyles :wink:
