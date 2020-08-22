@@ -1,0 +1,82 @@
+/* ==UserStyle==
+@name         Dark Stylus
+@description  Dark theme for Stylus extension.
+@namespace    https://github.com/Maurin3
+@version      1.0.0
+@author       Maurin3
+@homepageURL  https://github.com/Maurin3/Userstyles
+@supportURL   https://github.com/Maurin3/Userstyles/issues
+@updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-stylus.user.css
+@preprocessor stylus
+==/UserStyle== */
+
+@-moz-document  regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
+    /* The code inside the editor is original because it can be changed inside Stylus */
+    #stylus-edit, #stylus-manage, #header, .section {
+        background-color: #222222;
+        color: #dfdfdf;
+    }
+
+    #stylus-manage, a{
+        color: #dfdfdf;
+    }
+
+    .newUI .entry.enabled .style-name:hover .style-name-link{
+        color: hsla(180, 100%, 35%, 1);
+    }
+
+    .newUI .entry .style-name:hover::before{
+        background: linear-gradient(to right, hsla(180, 50%, 30%, 0.2), hsla(180, 20%, 10%, 0.05) 50%, transparent);
+    }
+
+    .entry.usercss .style-name-link::after{
+        background-color:hsla(180, 100%, 35%, 1);
+        color: #252525;
+    }
+
+    .svg-icon, .svg-icon.info:hover, .svg-icon.settings:hover {
+        fill: #dfdfdf !important;
+    }
+
+    input, select, option, input:not([type]), button, #search, #manage\.newUI\.sort, #backup-buttons .dropdown-content a {
+        color: #dfdfdf;
+        background-color: #222222;
+        border: 1px solid hsl(0, 0%, 62%);
+    }
+
+    input[type="checkbox"]:not(.slider):hover, #backup-buttons .dropdown-content a:hover{
+        background-color: #555555;
+    }
+
+    #backup-buttons .dropdown-content a:hover{
+        color: #dfdfdf;
+    }
+
+    button:not(:disabled):hover,#backup-buttons .dropdown:hover .dropbtn{
+        background-color: #555555;
+    }
+    ::-webkit-scrollbar { 
+        background-color: #333333;
+    }
+    ::-webkit-scrollbar-button { 
+        background-color: #333333;
+        color: #dfdfdf !important;
+    }
+    ::-webkit-scrollbar-track { 
+        background-color: #333333;
+    }
+    ::-webkit-scrollbar-track-piece { 
+        background-color: #333333;
+    }
+    ::-webkit-scrollbar-thumb { 
+        background-color: #292929;
+        border-radius: 25px;
+    }
+    ::-webkit-scrollbar-corner { 
+        background-color: #333333;
+    }
+    ::-webkit-resizer { 
+        background-color: #333333; 
+    }
+    
+}
