@@ -2,127 +2,159 @@
 @name         Dark Odoo Docs
 @description  Dark theme for Odoo Docs.
 @namespace    https://github.com/Maurin3
-@version      1.0.0
+@version      1.0.1
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
 @updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-odoo-docs.user.css
-@preprocessor stylus
+@advanced dropdown syntax-theme "Syntax theme" {
+    Default "Default" <<<EOT
+    /*! Default *\/
+        .highlight > pre{
+            background-color: #444444;
+        }
+        code{
+            background-color: #575757;
+            color: #DFDFDF;
+        }
+        .code-field-name, .code-field-body strong{
+            color: #FFFFFF !important;
+        }
+        .o_main_header > .o_sub_nav .collapse .nav > li.dropdown > a.dropdown-toggle{
+            background-color: #000000;
+            color: #DFDFDF;
+        } EOT;
+    Monokai "Monokai" <<<EOT
+    /*! Monokai *\/
+        .highlight > pre{
+            background-color: #1c1c1c;
+        }
+        code{
+            background-color: #575757;
+            color: #DFDFDF;
+        }
+        .code-field-name, .code-field-body strong{
+            color: #FFFFFF !important;
+        }
+        .o_main_header > .o_sub_nav .collapse .nav > li.dropdown > a.dropdown-toggle{
+            background-color: #000000;
+            color: #DFDFDF;
+        }
+        .highlight .nn,.highlight .n,.highlight .bp,.highlight .s1,.highlight .nd{
+            color: #e6db74;
+        }
+        .highlight .kn,.highlight .k{
+            color: #a6e22e;
+        }
+        .highlight .nf,.highlight .nc,.highlight .nb{
+            color: #f92672;
+        }
+        .highlight .c1{
+            color: grey;
+        }
+        .highlight .kc{
+            color: #66d9ef;
+        } EOT;
+}
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.odoo.com/documentation/"){
-.o_main_header.o_scrolled .o_sub_nav{
-    background-color: #000000;
-}
+    /* Menu */
+    .o_main_header.o_scrolled .o_sub_nav{
+        background-color: #000000;
+    }
 
-.o_main_header > .o_sub_nav > .container .nav > li.active > a,
-.navbar-aside li.active > a, .navbar-aside li.active:focus > a, .navbar-aside li.active:hover > a{
-    color: #FFFFFF !important;
-}
+    .o_main_header.o_inverted:not(.o_scrolled) > .o_sub_nav .nav > li > a, .o_main_header.o_inverted:not(.o_scrolled) > .o_sub_nav .o_app_name_title{
+        background-color: transparent !important;
+    }
 
-.o_main_header > .o_sub_nav > .container .nav > li > a,
-.navbar-aside ul li > a,
-.navbar-aside .gith-container .gith-link{
-    color: #CCCCCC !important;
-}
+    .o_main_header > .o_sub_nav .collapse .nav > li.dropdown.open .dropdown-menu,
+    .o_main_header > .o_sub_nav .collapse .nav > li.dropdown.open{
+        background-color: #000000;
+        color: #DFDFDF;
+    }
 
-#wrap{
-    background-color: #222222 !important;
-}
+    /* Titles */
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+        color: #DFDFDF;
+    }
 
-h2{
-    border-bottom-color: transparent !important;
-}
+    h2{
+        border-bottom-color: transparent !important;
+    }
 
-main.index .card figcaption{
-    color: #DFDFDF;
-    background-color: #333333;
-    box-shadow: inset 0 1px 0 #333333;
-}
+    /* Side menu */
+    .navbar-aside > ul > li{
+        background-color: #333333;
+    }
 
-article, .o_content.row{
-    background-color: #252525;
-    color: #DFDFDF;
-}
+    .navbar-aside > ul > li > a{
+        color: #DFDFDF !important;   
+    }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-    color: #DFDFDF;
-}
+    .o_main_header > .o_sub_nav > .container .nav > li > a,
+    .navbar-aside ul li > a,
+    .navbar-aside .gith-container .gith-link{
+        color: #CCCCCC !important;
+    }
 
-.navbar-aside > ul > li{
-    background-color: #333333;
-}
+    .o_main_header > .o_sub_nav .collapse .nav > li.dropdown.open .dropdown-menu > li > a{
+        color: #DFDFDF;
+    }
 
-.navbar-aside > ul > li > a{
-    color: #DFDFDF !important;   
-}
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+        background-color: #1b1b1b;
+    }
 
-main .alert.alert-warning{
-    background-color: #2e2705 !important;
-    color: #d3ad78 !important;
-    border-color: #eb9114 !important;
-}
+    /* Main */
+    #wrap{
+        background-color: #222222 !important;
+    }
 
-main .alert, .alert-info{
-    background-color: #0e1f25 !important;
-    color: #92b0b9 !important;
-    border-color: #469ab9 !important;
-}
+    /* Content */
+    article, .o_content.row{
+        background-color: #252525;
+        color: #DFDFDF;
+    }
 
-main .alert.alert-go_to{
-    border-color: #875A7B !important;
-    background-color: #13000e !important;
-    color: #b98aac !important;
-}
+    /* Card */    
+    main.index .card figcaption{
+        color: #DFDFDF;
+        background-color: #333333;
+        box-shadow: inset 0 1px 0 #333333;
+    }
 
-main .alert.alert-go_to > h3.alert-title{
-    color: #b98aac !important;
-}
+    img.img-responsive{
+        box-shadow: 0 3px 15px #575757;
+        border-color: #575757;
+    }
 
-main .alert.alert-danger{
-    background-color: #240f0f !important;
-    color: #c78785 !important;
-    border-color: #d0352f !important;
-}
 
-.highlight > pre{
-    background-color: #444444;
-}
+    /* Alerts */
+    main .alert.alert-warning{
+        background-color: #2e2705 !important;
+        color: #d3ad78 !important;
+        border-color: #eb9114 !important;
+    }
+    main .alert, .alert-info{
+        background-color: #0e1f25 !important;
+        color: #92b0b9 !important;
+        border-color: #469ab9 !important;
+    }
+    main .alert.alert-go_to{
+        border-color: #875A7B !important;
+        background-color: #13000e !important;
+        color: #b98aac !important;
+    }
+    main .alert.alert-go_to > h3.alert-title{
+        color: #b98aac !important;
+    }
+    main .alert.alert-danger{
+        background-color: #240f0f !important;
+        color: #c78785 !important;
+        border-color: #d0352f !important;
+    }
 
-code{
-    background-color: #575757;
-    color: #DFDFDF;
-}
-
-.code-field-name, .code-field-body strong{
-    color: #FFFFFF !important;
-}
-
-img.img-responsive{
-    box-shadow: 0 3px 15px #575757;
-    border-color: #575757;
-}
-
-.o_main_header > .o_sub_nav .collapse .nav > li.dropdown > a.dropdown-toggle{
-    background-color: #000000;
-    color: #DFDFDF;
-}
-
-.o_main_header > .o_sub_nav .collapse .nav > li.dropdown.open .dropdown-menu,
-.o_main_header > .o_sub_nav .collapse .nav > li.dropdown.open{
-    background-color: #000000;
-    color: #DFDFDF;
-}
-
-.o_main_header > .o_sub_nav .collapse .nav > li.dropdown.open .dropdown-menu > li > a{
-    color: #DFDFDF;
-}
-
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
-    background-color: #1b1b1b;
-}
-
-.o_main_header.o_inverted:not(.o_scrolled) > .o_sub_nav .nav > li > a, .o_main_header.o_inverted:not(.o_scrolled) > .o_sub_nav .o_app_name_title{
-    background-color: transparent !important;
-}
+    /* Code */
+    /*[[syntax-theme]]*/
 }
