@@ -1,0 +1,78 @@
+/* ==UserStyle==
+@name         Dark Gmail
+@description  Dark theme for Gmail.
+@namespace    https://github.com/Maurin3
+@version      1.0.0
+@author       Maurin3
+@homepageURL  https://github.com/Maurin3/Userstyles
+@supportURL   https://github.com/Maurin3/Userstyles/issues
+@updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-gmail.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("mail.google.com") {
+    /* Main Menu */
+    .gb_ta.gb_ae .gb_3d{
+        background-color: #222222;
+        color: #FFFFFF;
+    }
+
+    .gb_ta.gb_ae .gb_3d svg{
+        fill: #FFFFFF
+    }
+
+    .gb_ta.gb_ae .gb_3d .gb_va{
+        content: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png");
+    }
+
+    .gb_fe.gb_6e .gb_Xe .gb_af{
+        background-color: #333333;
+    }
+
+    .gb_uf:not(.gb_Mf)::placeholder{
+        color: #FFFFFF !important;
+    }
+
+    .gb_ta:not(.gb_ua) .gb_ja{
+        background-color: #333333;
+        border-color: #333333;
+    }
+
+    .gb_F, .gb_Eb.gb_Eb, .gb_Rb, .gb_Lb,.gb_l .gb_rb{
+        background-color: #333333;
+        border-color: #333333;
+        color: #FFFFFF;
+    }
+
+    .gb_Ab.gb_Ab, .gb_Mb.gb_Mb, .gb_Cb:hover, .gb_Eb:hover, .gb_sb:hover{
+        background-color: #444444;
+        border-color: #444444;
+        color: #FFFFFF;
+    }
+
+    .gb_db.gb_eb{
+        background-color: #063a93;
+        color: #FFFFFF;
+    }
+
+    .gb_l .gb_ub{
+        color: #FFFFFF;
+    }
+
+    .gb_l .gb_wb{
+        color: #999999;
+    }
+
+    /* Sidebar */
+    .aeN{
+        background-color: #333333;
+    }
+
+    .aio{
+        color: #FFFFFF !important;
+    }
+
+    .z0>.L3{
+        background-color: #444444;
+        color: #FFFFFF;
+    }
+}
