@@ -2,7 +2,7 @@
 @name         Dark Odoo Docs
 @description  Dark theme for Odoo Docs.
 @namespace    https://github.com/Maurin3
-@version      1.0.1
+@version      1.0.2
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -26,12 +26,12 @@
         } EOT;
     Monokai "Monokai" <<<EOT
     /*! Monokai *\/
-        .highlight > pre{
+        .highlight > pre, pre{
             background-color: #1c1c1c;
         }
-        code{
-            background-color: #575757;
-            color: #DFDFDF;
+        code, .code{
+            background-color: #1c1c1c;
+            color: #e6db74;
         }
         .code-field-name, .code-field-body strong{
             color: #FFFFFF !important;
@@ -40,21 +40,22 @@
             background-color: #000000;
             color: #DFDFDF;
         }
-        .highlight .nn,.highlight .n,.highlight .bp,.highlight .s1,.highlight .nd{
+        .highlight .nn,.highlight .n,.highlight .bp,.highlight .s1,.highlight .nd,.highlight .s, .highlight .s2, .highlight .nx{
             color: #e6db74;
         }
-        .highlight .kn,.highlight .k{
+        .highlight .kn,.highlight .k, .highlight .kd{
             color: #a6e22e;
         }
-        .highlight .nf,.highlight .nc,.highlight .nb{
+        .highlight .nf,.highlight .nc,.highlight .nb, .highlight .na, .highlight .nt{
             color: #f92672;
         }
         .highlight .c1{
             color: grey;
         }
-        .highlight .kc{
+        .highlight .kc, .highlight .mi, .highlight .si{
             color: #66d9ef;
-        } EOT;
+        }
+        EOT;
 }
 ==/UserStyle== */
 
