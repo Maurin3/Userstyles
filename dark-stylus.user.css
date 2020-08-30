@@ -2,7 +2,7 @@
 @name         Dark Stylus
 @description  Dark theme for Stylus extension.
 @namespace    https://github.com/Maurin3
-@version      1.0.2
+@version      1.0.3
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -12,9 +12,14 @@
 
 @-moz-document  regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
     /* The code inside the editor is original because it can be changed inside Stylus */
-    #stylus-edit, #stylus-manage, #header, .section {
+    #stylus-edit, #stylus-manage, #header, .section, #help-popup, #options, .menu-items-wrapper{
         background-color: #222222;
         color: #dfdfdf;
+    }
+    
+    #search-replace-dialog textarea, #search-replace-dialog [data-action="clear"]{
+        background-color: #222222 !important;
+        color: #dfdfdf !important;
     }
 
     #stylus-manage, a{
@@ -47,9 +52,28 @@
     input[type="checkbox"]:not(.slider):hover, #backup-buttons .dropdown-content a:hover{
         background-color: #555555;
     }
+    
+    .slider{
+        border: 0px solid #9e9e9e;
+        background-color: transparent !important;
+    }
+    
+    .onoffswitch{
+        background-color: #00352d !important;
+        border-radius: 15px;
+    }
 
     #backup-buttons .dropdown-content a:hover{
         color: #dfdfdf;
+    }
+    
+    #options-title,#message-box-title{
+        background-color: #00352d !important;
+        color: #dfdfdf;
+    }
+    
+    .onoffswitch input:checked + span{
+        background-color: #00352d !important;
     }
 
     button:not(:disabled):hover,#backup-buttons .dropdown:hover .dropbtn{
@@ -70,6 +94,16 @@
         color: #dfdfdf !important;
     }
 
+    .newUI .updater-icons > :not(.check-update):after{
+        border: 1px solid #7f700c;
+        background-color: #443d05;
+    }
+    
+    .newUI .can-update:not([data-details$="locally edited"]) .update:after{
+        background-color: #003135;
+        border: 1px solid #02ccc8;
+    }
+    
     ::-webkit-scrollbar {
         background-color: #333333;
     }
@@ -93,5 +127,4 @@
     ::-webkit-resizer {
         background-color: #333333; 
     }
-    
 }
