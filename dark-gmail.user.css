@@ -9,7 +9,7 @@
 @updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-gmail.user.css
 ==/UserStyle== */
 
-@-moz-document url-prefix("mail.google.com") {
+@-moz-document url-prefix("https://mail.google.com") {
     /* Make the loading screen dark */
     #loading {
         background: #222222;
@@ -152,11 +152,6 @@
         color: #FFFFFF;
     }
 
-    /* Hangouts Part */
-    #\:a\.mn{
-        color: #FFFFFF;
-    }
-
     /* Images/Icons */
     .gb_Be > img.gb_ua{
         content: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png");
@@ -173,6 +168,7 @@
     .aHS-bnq .qj{
         background-image: url('https://www.gstatic.com/images/icons/material/system/1x/insert_drive_file_white_20dp.png');
     }
+
     .aHS-bnu .qj{
         background-image: url('https://www.gstatic.com/images/icons/material/system/1x/send_white_20dp.png');
     }
@@ -334,5 +330,25 @@
 
     .aii{
         background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_right_white_20dp.png')
+    }
+}
+
+@-moz-document url-prefix("https://hangouts.google.com/webchat/u/0/frame2"){
+    /* Hangouts Part */
+    #\:a\.mn{
+        color: #FFFFFF;
+    }
+
+    .td.iM3vKf .Bb .ng, .td.iM3vKf .Bb .lt{
+        color: #FFFFFF;
+    }
+
+    .td.Hm .Bb:hover, .td.Hm .Bb:focus{
+        background-color: #444444;
+    }
+
+    /* Images */
+    .lr .au, .Jvj9ed .Px, .uOlSBc .Px{
+        background: no-repeat url('https://ssl.gstatic.com/chat/babble/sprites/common-517bca7f07a37c64c3263a1411e266a5.png') -449px -149px;
     }
 }
