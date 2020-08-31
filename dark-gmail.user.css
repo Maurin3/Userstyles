@@ -11,16 +11,16 @@
 
 @-moz-document url-prefix("mail.google.com") {
     /* Main Menu */
-    .gb_ta.gb_ae .gb_3d{
+    .gb_ta.gb_ae .gb_3d, .gb_3d.gb_le.gb_ce{
         background-color: #222222;
         color: #FFFFFF;
     }
 
-    .gb_ta.gb_ae .gb_3d svg{
+    .gb_ta.gb_ae .gb_3d svg, .gb_3d.gb_le.gb_ce svg{
         fill: #FFFFFF
     }
 
-    .gb_ta.gb_ae .gb_3d .gb_va{
+    .gb_ta.gb_ae .gb_3d .gb_va, .gb_3d.gb_le.gb_ce .gb_va{
         content: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png");
     }
 
