@@ -139,6 +139,14 @@
         background-color: #333333;
     }
 
+    .aj5 .J-KU, .aj5.J-KU-Jg{
+        background-color: #333333;
+    }
+
+    .aj5 .J-KU.J-KU-KO[aria-selected="true"]{
+        background-color: #444444 !important;
+    }
+
     /* Submenu */
     #\:4{
         background-color: #333333;
@@ -333,9 +341,9 @@
     }
 }
 
-@-moz-document url-prefix("https://hangouts.google.com/webchat/u/0/frame2"){
+@-moz-document url-prefix("https://hangouts.google.com/webchat/u/0/frame"){
     /* Hangouts Part */
-    #\:a\.mn{
+    #\:a\.mn, #\:5\.mn{
         color: #FFFFFF;
     }
 
@@ -347,8 +355,59 @@
         background-color: #444444;
     }
 
+    .qCUW5d{
+        color: #FFFFFF;
+    }
+
+    .HfhnEf.Rb6KY, .HfhnEf:hover, .HfhnEf.kRbK0e{
+        background-color: #444444;
+    }
+
+    /* Conversation */
+    .Ik{
+        background-color: #222222;
+    }
+
+    .EV, .My{
+        background-color: #333333;
+        border-bottom: 1px solid #333333;
+        color: #FFFFFF;
+    }
+
+    .iN{
+        background: #444444;
+    }
+
+    .pj .KRQuhe, .yV, .Sn .KRQuhe{
+        background-color: #333333;
+    }
+
+    .Sn .jHldnd, .pj .jHldnd{
+        border: 8px solid #333333;
+    }
+
+    .Mu, .TlvAYc, .BV, .DV{
+        color: #FFFFFF;
+    }
+
     /* Images */
     .lr .au, .Jvj9ed .Px, .uOlSBc .Px{
         background: no-repeat url('https://ssl.gstatic.com/chat/babble/sprites/common-517bca7f07a37c64c3263a1411e266a5.png') -449px -149px;
+    }
+
+    .OK{
+        background: no-repeat url(//ssl.gstatic.com/chat/babble/sprites/common-517bca7f07a37c64c3263a1411e266a5.png) -127px -91px;
+    }
+
+    .Xv{
+        background: no-repeat url(//ssl.gstatic.com/chat/babble/sprites/common-517bca7f07a37c64c3263a1411e266a5.png) -309px -207px
+    }
+
+    .Cyynpc{
+        background: no-repeat url(//ssl.gstatic.com/chat/babble/sprites/common-517bca7f07a37c64c3263a1411e266a5.png) -5px -29px;
+    }
+
+    .yq6mRd, .AV{
+        filter: invert(100%); 
     }
 }
