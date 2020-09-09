@@ -30,24 +30,24 @@
     }
 
     /* Main Menu */
-    .gb_ta.gb_ae .gb_3d, .gb_3d.gb_le.gb_ce{
-        background-color: #222222;
+    .gb_ta#gb, .gb_3d.gb_le.gb_ce{
+        background-color: #222222 !important;
         color: #FFFFFF;
     }
 
-    .gb_ta.gb_ae .gb_3d svg, .gb_3d.gb_le.gb_ce svg{
-        fill: #FFFFFF
+    .gb_ta#gb svg, .gb_3d.gb_le.gb_ce svg{
+        fill: #FFFFFF;
     }
 
-    .gb_yc.gb_ze > .gb_va{
+    .gb_ze > .gb_va{
         content: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png");
     }
 
-    .gb_fe.gb_6e .gb_Xe .gb_af{
+    form#aso_search_form_anchor{
         background-color: #333333;
     }
 
-    .gb_uf:not(.gb_Mf)::placeholder{
+    #gs_lc50 > input::placeholder{
         color: #FFFFFF !important;
     }
 
@@ -60,19 +60,23 @@
         border-color: #333333;
     }
 
-    .gb_F, .gb_Eb.gb_Eb, .gb_Rb, .gb_Lb,.gb_l .gb_rb{
+    .gb_F, .gb_Eb.gb_Eb, .gb_Rb, .gb_Lb,.gb_l .gb_rb, .gb_Db.gb_Db, .gb_Qb, .gb_Kb, .gb_Bb.gb_Bb{
         background-color: #333333;
         border-color: #333333;
         color: #FFFFFF;
     }
 
-    .gb_Ab.gb_Ab, .gb_Mb.gb_Mb, .gb_Cb:hover, .gb_Eb:hover, .gb_sb:hover{
+    .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .gb_zb.gb_zb, .gb_l .gb_qb, .gb_rb.gb_ig.gb_mb.gb_ng, .gb_Cb:hover, .gb_Eb:hover, .gb_sb:hover,.gb_Ub>.gb_Tb:hover, .gb_Bb.gb_Bb:hover{
         background-color: #444444;
         border-color: #444444;
         color: #FFFFFF;
     }
+    
+    .gb_Ab, .gb_8b{
+        color: #FFFFFF;
+    }
 
-    .gb_db.gb_eb{
+    .gb_cb.gb_db{
         background-color: #063a93;
         color: #FFFFFF;
     }
