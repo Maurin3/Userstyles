@@ -10,6 +10,213 @@
 @updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-google.user.css
 ==/UserStyle== */
 
-@-moz-document url-prefix("www.google.com/"){
-    
+@-moz-document url-prefix("https://www.google.com"){
+    /* Header */
+    .sfbg, #hdtbSum, .jNmzwc, .Lj9fsd, .jZWadf{
+        background-color: #222222;
+    }
+
+	#hdtb, .cEPPT{
+		border: 0px;
+	}
+
+	.RNNXgb, .aajZCb, .zthhpf, .sbibod, .sbib_a, .gb_l .gb_nb{
+		background-color: #111111;
+		border: 1px solid #111111;	
+	}
+	
+	.gLFyf, .sbl1p, .sbl1, .JSAgYe, #lst-ib{
+		color: #FFFFFF;
+	}
+	
+	.sbhl{
+		background: #222222;
+	}
+	
+	.NZmxZe{
+		color: #828282;
+	}
+	
+	.rQEFy{
+		color: #1a73e8;
+	}
+	
+	.gb_l.gb_5a.gb_6a, .gb_Ab.gb_Ab{
+		background-color: #222222;
+		color: #DFDFDF;
+	}
+	
+	.gb_Ib.gb_Ib, .gb_Jb.gb_Jb, .gb_wb.gb_wb, .gb_ob:hover{
+		background-color: #333333;
+		border: 1px solid #333333;
+		color: #DFDFDF;
+	}
+	
+	.gb_l .gb_qb, .gb_5b{
+		color: #DFDFDF;
+	}
+	
+	.gb_Rb>.gb_Qb:hover, .gb_Ab:hover{
+		background-color: #333333;
+	}
+	
+	.gb_Ib:hover, .gb_wb:hover, .gb_yb:hover{
+		background-color: #111111;
+		border: 1px solid #111111;
+	}
+	
+	.gb_C .gb_D{
+		background-position: -460px -38px;
+	}
+	
+	.EHzcec, .u4RcUd, .T4LgNb, .LVal7b {
+		background-color: #111111;
+		border: 1px solid #111111;
+	}
+	
+	/* Mini-header */
+	.minidiv .sfbg{
+		background-color: #222222;
+	}
+	
+	/* Body */
+	body, #main, #appbar, .mw, #cnt, .cUezCb{
+		background-color: #333333;
+	}
+	
+	.VqFMTc{
+		background-color: #333333;
+		color: #FFFFFF;
+	}
+
+	
+	.y8Jpof:hover{
+		background-color: #222222;
+	}
+	
+	.MXl0lf, .cF4V5c{
+		background-color: #222222;
+		border: 1px solid #222222;
+	}
+	
+	.MXl0lf:hover{
+		background-color: #111111;
+	}
+	
+	.garHBe, .y8Jpof .LrzXr, .V2Zq0e, .YyVfkd, .GmE3X, .JolIg, #gb#gb a.gb_f, #gb#gb a.gb_g, #gb#gb span.gb_g{
+		color: #FFFFFF;
+	}
+	
+	.LHJvCe, .P1usbc, .cwUqwd, .s, .aCOpRe em, .st em, .f3LoEf, .s75CSd, .sMi44c.lNHeqe, #brs .med, .gG0TJc, .cJzOGc, .cbphWd, .iOBnre, .yDYNvb.lyLwlc, #SIvCob{
+		color: #DFDFDF;
+	}
+	
+	.f, .f a:link, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .sMi44c:hover .WGvvNb, .sMi44c:hover.WGvvNb, .di3YZe,.qzEoUe {
+		color: #828282;
+	}
+	
+	.eipWBe{
+		color: #a6a3a3;
+	}
+	
+	a:visited, .lLrAF:visited{
+		color: #c557fb;
+	}
+
+	a, a.fl:link, .fl a, .gl a:link, .EZRelc, .wUrVib, .lLrAF, .RTNUJf, .kl0Osd, .truncation-information:link, .truncation-information:visited{
+		color: #64a1ff;
+	}
+	
+	.xXEKkb{
+		color: #64a1ff !important;
+	}
+	
+	.e8fRJf{
+		color: #3ab562;
+	}
+	
+	.aXBZVd{
+		background-color: #333a44;
+	}
+	
+	.GHDvEf, .GHDvEf:hover, .GHDvEf.selected, .GHDvEf.selected:hover{
+		background-color: #333333;
+	}
+	
+	#rcnt .action-menu-item, .action-menu-item{
+		background-color: #333333;
+	}
+	.action-menu-panel{
+		border: 1px solid #111;
+	}
+	
+	#rcnt .action-menu-item.selected, .action-menu-item.selected{
+		background-color: #222222;
+	}
+	
+	#rcnt .action-menu-item a.fl, .action-menu-item a.fl{
+		color: #DFDFDF;
+	}
+	
+	.J3Tg1d, .kp-blk{
+		border: 1px solid #828282;
+	}
+	
+	.gBPM8 .tmS4cc.VgAC5d .gadasb{
+		color: #DFDFDF;
+	}
+	
+	.W8wzH{
+		color: #828282;
+	}
+	
+	.UwAaac{
+		border-top: 1px solid #828282;
+	}
+	
+	.F9PbJd, .llvJ5e{
+		background-color: #222222;
+		border: 1px solid #222222;
+		color: #DFDFDF;
+	}
+	
+	.cEW58{
+		background-color: #222222;
+		border: 1px solid #222222;
+	}
+	
+	.cEW58 > svg{
+		fill: #DFDFDF;
+	}
+	
+	.tfB0Bf input[type="submit"], .gbqfba{
+		background-image: none;
+		background-color: #222222;
+		border: 1px solid #222222;
+		color: #DFDFDF;
+	}
+	
+	.tfB0Bf input[type="submit"]:hover{
+		background-image: none;
+		background-color: #111111;
+		border: 1px solid #111111;
+		color: #DFDFDF;
+	}
+	
+	/* Footer */
+	.f6F9Be{
+		background-color: #222222;
+	}
+	
+	.b2hzT{
+		border-bottom: 1px solid #222222;
+	}
+	
+	.b0KoTc, #Wprf1b{
+		color: #828282;
+	}
+	
+	.smiUbb a, #swml a, .fbar p, .fbar a, #fsettl, #fsett a{
+		color: #DFDFDF;
+	}
 }
