@@ -1,0 +1,15 @@
+
+/* ==UserStyle==
+@name         Dark Google
+@description  Dark theme for Google.
+@namespace    https://github.com/Maurin3
+@version      1.0.2
+@author       Maurin3
+@homepageURL  https://github.com/Maurin3/Userstyles
+@supportURL   https://github.com/Maurin3/Userstyles/issues
+@updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-google.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("www.google.com/"){
+    
+}
