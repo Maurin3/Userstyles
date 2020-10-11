@@ -11,10 +11,10 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com"){
-    /* Header */
-    .sfbg, #hdtbSum, .jNmzwc, .Lj9fsd, .jZWadf{
-        background-color: #222222;
-    }
+/* Header */
+	.sfbg, #hdtbSum, .jNmzwc, .Lj9fsd, .jZWadf{
+		background-color: #222222;
+	}
 
 	#hdtb, .cEPPT{
 		border: 0px;
@@ -74,12 +74,12 @@
 		border: 1px solid #111111;
 	}
 	
-	/* Mini-header */
+/* Mini-header */
 	.minidiv .sfbg{
 		background-color: #222222;
 	}
 	
-	/* Body */
+/* Body */
 	body, #main, #appbar, .mw, #cnt, .cUezCb{
 		background-color: #333333;
 	}
@@ -203,7 +203,7 @@
 		color: #DFDFDF;
 	}
 	
-	/* Footer */
+/* Footer */
 	.f6F9Be{
 		background-color: #222222;
 	}
@@ -218,5 +218,513 @@
 	
 	.smiUbb a, #swml a, .fbar p, .fbar a, #fsettl, #fsett a{
 		color: #DFDFDF;
+	}
+}
+	
+	
+@-moz-document url-prefix("https://mail.google.com/mail/u/") {
+/* Loading Screen */
+	#loading {
+		background: #222222;
+	}
+	.msgb, .YI, .YV {
+		color: #FFFFFF;
+	}
+	#bhlf > input.submit_as_link {
+		color: #00adee !important;
+	}
+	.z0 > .L3 {
+		box-shadow: none;
+		background-color: #333333;
+		color: #ccc;
+	}
+	.z0 > .L3:hover {
+		background-color: #444444;
+	}
+
+/* Main Menu */
+	.gb_ta#gb, .gb_3d.gb_le.gb_ce{
+		background-color: #222222 !important;
+		color: #FFFFFF;
+	}
+
+	.gb_ta#gb svg, .gb_3d.gb_le.gb_ce svg{
+		fill: #FFFFFF;
+	}
+
+	.gb_ve > .gb_va{
+		content: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png");
+	}
+
+	form#aso_search_form_anchor{
+		background-color: #333333;
+	}
+
+	#gs_lc50 > input::placeholder{
+		color: #FFFFFF !important;
+	}
+
+	.gb_uf:not(.gb_Mf){
+		color: #FFFFFF !important;
+	}
+
+	.gb_ta:not(.gb_ua) .gb_ja{
+		background-color: #333333;
+		border-color: #333333;
+	}
+	
+	.gb_ja .gb_zb{
+		background-color: #333333 !important;
+	}
+
+	.gb_F, .gb_Eb.gb_Eb, .gb_Rb, .gb_Lb,.gb_l .gb_rb, .gb_Db.gb_Db, .gb_Qb, .gb_Kb, .gb_Bb.gb_Bb{
+		background-color: #333333;
+		border-color: #333333;
+		color: #FFFFFF;
+	}
+
+	.gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .gb_zb.gb_zb, .gb_l .gb_qb, .gb_rb.gb_ig.gb_mb.gb_ng, .gb_Cb:hover, .gb_Eb:hover, .gb_sb:hover,.gb_Ub>.gb_Tb:hover, .gb_Bb.gb_Bb:hover{
+		background-color: #444444;
+		border-color: #444444;
+		color: #FFFFFF;
+	}
+	
+	.gb_Ab, .gb_8b, .gb_pf, .gb_5e.gb_6e .gb_pf{
+		color: #FFFFFF;
+	}
+
+	.gb_cb.gb_db{
+		background-color: #063a93;
+		color: #FFFFFF;
+	}
+
+	.gb_l .gb_ub{
+		color: #FFFFFF;
+	}
+
+	.gb_l .gb_wb{
+		color: #999999;
+	}
+
+	.ZZ{
+		background-color: #333333;
+	}
+
+	.boo > .ZG{
+		color: #FFFFFF;
+	}
+
+	.nr{
+		background-color: #333333;
+	}
+
+	.boo .nr, .boo .nr:focus{
+		box-shadow: inset 0 -1px 0 0 rgba(206, 206, 206, .26);
+		color: #FFFFFF;
+	}
+
+	.boo .aQl > .J-JN-M-I-Jm, .boo .aaa > .J-JN-M-I-Jm, .boo .ZE > .J-JN-M-I-Jm, .bs1+.bs3, .btj+.aD{
+		color: #FFFFFF;
+	}
+
+	.boo .T-axO:not(.J-JN-M-I-JW):not(.J-JN-M-I-JO).aQl, .boo .T-axO:not(.J-JN-M-I-JW):not(.J-JN-M-I-JO).aaa, .boo .T-axO:not(.J-JN-M-I-JW):not(.J-JN-M-I-JO).ZE{
+		box-shadow: inset 0 -1px 0 0 rgba(206, 206, 206, .26);
+	}
+
+	.bs0 > .acM.acN{
+		color: rgba(255, 255, 255, .38);
+	}
+
+/* Sidebar */
+	.aeN{
+		background-color: #333333;
+	}
+
+	.aio{
+		color: #FFFFFF !important;
+	}
+
+	.z0 > .L3{
+		background-color: #444444;
+		color: #FFFFFF;
+	}
+
+	.TO .nU > .n0, .TO.NQ .nU > .n0, .TO.nZ .nU > .n0, .ah9 > .CJ, .n3 > .CL > .CK{
+		color: #FFFFFF;
+	}
+
+	.TK .TO:active, .n6 .ah9.aiu:active, .CL:active, .TO.nZ, .TO.ol{
+		background-color: #222222;
+	}
+
+	.TO.NQ, .n6 .ah9:hover, .n6 .ah9.aiu:hover, .n6 .ah9:focus, .CL.NQ, .CL:hover, .CL:focus{
+		background-color: #444444;
+	}
+
+	.wT > .n3 .byl:first-child .aim:first-child .nZ{
+		background-color: #550800;
+	}
+
+	.byl .nZ.aS5{
+		background-color: #001e08;
+	}
+
+	.byl .nZ.aS3 {
+		background-color: #1b0033;
+	}
+
+	.byl .nZ.aS4 {
+		background-color: #371900;
+	}
+
+	.byl .nZ.aS6 {
+		background-color: #000d24;
+	}
+
+	.aHS-bnr .qj::before{
+		color: #FFFFFF;
+	}
+
+	.NQ, .aij{
+		background-color: #333333;
+	}
+
+	.aj5 .J-KU, .aj5.J-KU-Jg{
+		background-color: #333333;
+	}
+
+	.aj5 .J-KU.J-KU-KO[aria-selected="true"]{
+		background-color: #444444 !important;
+	}
+
+/* Submenu */
+	#\:4{
+		background-color: #333333;
+	}
+
+	.amH > .Dj, .h0 > .adl{
+		color: #FFFFFF;
+	}
+
+	.dt, .v .f1, .v .f1 .f0{
+		color: #FFFFFF;
+	}
+
+	/* List */
+	.x7, .yO{
+		color: #FFFFFF;
+		background-color: #444444;
+	}
+
+	.yO > .xW, .y2, .bx0{
+		color: #959595;
+	}
+
+	.brc{
+		color: #959595;
+		box-shadow: inset 0 0 0 1px rgba(217, 217, 217, .302);
+	}
+
+	.zE{
+		background-color: #555555;
+		color: #FFFFFF;
+	}
+
+	.aeG, .aeG > .l2, .aeJ{
+		background-color: #555555;
+		color: #FFFFFF;
+	}
+
+	.md.mj, .aeU .ma, .ma .mb, .ae3 .l6, .l8, .l9{
+		color: #FFFFFF;
+	}
+
+	.x7 .y2{
+		color: #BBBBBB;
+	}
+
+/* Content */
+	.amr > .wR.nr{
+		background-color: transparent;
+		color: #222;
+	}
+
+/* Widgets */
+	.nH.nn, .brC-aT5-aOt-Jw{
+		background-color: #333333;
+	}
+
+	.bAw .brC-aT5-aOt-Jw{
+		border-left: 1px solid #222222;
+	}
+
+	.brC-bsf-aT5-aOt .aT5-aOt-I-Pk .aT5-aOt-I-JX-atM-J6, .brC-bsf-aT5-aOt .aT5-aOt-I-Op .aT5-aOt-I-JX-atM-J6, .brC-bsf-aT5-aOt .aT5-aOt-I-KO .aT5-aOt-I-JX-atM-J6, .aT5-aOt-I-KO.bse-bvF-aLp.aT5-aOt-I-JO .aT5-aOt-I-JX-atM-J6{
+		background-color: #666666;
+	}
+
+	.aT5-aOt-I-JW .aT5-aOt-I-JX-atM, .aT5-aOt-I-Kq .aT5-aOt-I-JX-atM, .brC-aMv-bta .aT5-aOt-I-KO .aT5-aOt-I-JX-atM, .brC-aMv-bta .aT5-aOt-I-JO .aT5-aOt-I-JX-atM {
+		background-color: #666666;
+	}
+
+	svg.aT5-aOt-I-JX{
+		fill: #FFFFFF
+	}
+
+	#qJTzr > .aT5-aOt-I-JX-Jw{
+		background-image: url(https://www.gstatic.com/images/icons/material/system/1x/add_white_24dp.png) !important;
+	}
+
+	.brC-dA-I.aT5-aOt-I-Jp .aT5-aOt-I-JX-atM, .brC-aMv-bta .brC-dA-I.aT5-aOt-I-Jp .aT5-aOt-I-JX-atM{
+		background-color: #333333;
+	}
+
+	.brC-dA-I.aT5-aOt-I-Jp.aT5-aOt-I-JW .aT5-aOt-I-JX-atM, .brC-aMv-bta .brC-dA-I.aT5-aOt-I-Jp.aT5-aOt-I-JW .aT5-aOt-I-JX-atM{
+		background-color: #222222;
+	}
+
+
+/* Images/Icons */
+	.gb_Be > img.gb_ua{
+		content: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png");
+	}
+
+	.aHS-bnt .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/inbox_white_20dp.png');
+	}
+
+	.nZ > .aHS-bnt .qj, .aHS-bnt .qj::before{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/inbox_gm_googlered600_20dp.png') !important;
+	}
+
+	.aHS-bnq .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/insert_drive_file_white_20dp.png');
+	}
+
+	.aHS-bnu .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/send_white_20dp.png');
+	}
+
+	.aHS-bnx .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png');
+	}
+
+	.aHS-YH .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/videocam_white_20dp.png');
+	}
+
+	.aHS-YW .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/keyboard_white_20dp.png');
+	}
+
+	.pM{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png');
+	}
+
+	.air .G-asx{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/expand_less_white_20dp.png');
+	}
+
+	.n4 .G-asx{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/expand_more_white_20dp.png');
+	}
+
+	.aHS-bnw .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/grade_white_20dp.png');
+	}
+
+	.aHS-bu1 .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png');
+	}
+
+	.aHS-bns .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/label_important_white_20dp.png');
+	}
+
+	.aHS-aHP .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/hangout_white_20dp.png');
+	}
+
+	.TO > .aHS-nd .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/schedule_send_white_20dp.png');
+	}
+
+	.aHS-aHO .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/mail_white_20dp.png');
+	}
+
+	.aHS-bnv .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/report_white_20dp.png');
+	}
+
+	.aS6 .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/people_white_20dp.png');
+	}
+
+	.aS4 .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/info_white_20dp.png');
+	}
+
+	.aS3 .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/forum_white_20dp.png');
+	}
+
+	.aS5 .qj{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/local_offer_white_20dp.png')
+	}
+
+	.CL::before{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/settings_white_20dp.png');
+	}
+
+	.Wj::before{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/add_white_20dp.png');
+	}
+
+	.J-KU .a8V, .J-KU-KO .a8V, .J-KU-JW .a8V{
+		background: no-repeat url('https://ssl.gstatic.com/mail/sprites/hangouts_white-655447bff8cb507d2679830e7022183a.png') 0 -390px; 
+	}
+
+	.J-KU .aH3, .J-KU-KO .aH3{
+		background: url('https://ssl.gstatic.com/ui/v1/icons/mail/wbt/contacts_white_icon21.png') no-repeat;
+	}
+
+	.J-KU.a65 .aj2, .J-KU-KO.a65 .aj2, .J-KU-JW.a65 .aj2{
+		background: no-repeat url('https://ssl.gstatic.com/mail/sprites/hangouts_white-655447bff8cb507d2679830e7022183a.png') 0 -150px;
+	}
+
+	.ar6{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_back_white_20dp.png');
+	}
+
+	.ar8{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/archive_white_20dp.png');
+	}
+
+	.asl{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/report_white_20dp.png');
+	}
+
+	.ar9{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png');
+	}
+
+	.bAP{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/mark_as_unread_white_20dp.png');
+	}
+
+	.brW{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png');
+	}
+
+	.Vj{
+		background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/task_add_filled_20_white_1x.png');
+	}
+
+	.ase{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/drive_file_move_white_20dp.png');
+	}
+
+	.asb{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/label_white_20dp.png');
+	}
+
+	.bjy::after{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png');
+	}
+
+	.adj, .amI{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/chevron_left_white_20dp.png');
+	}
+
+	.adk, .amJ{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/chevron_right_white_20dp.png');
+	}
+
+	.asf{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/refresh_white_20dp.png');
+	}
+
+	.G-tF .T-Jo{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_outline_blank_white_20dp.png');
+	}
+
+	.G-asx{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png');
+	}
+
+	.G-tF .T-Jo-Jp{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_white_20dp.png');
+	}
+
+	.aih{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png');
+	}
+
+	.aii{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_right_white_20dp.png')
+	}
+
+	.bs5::after{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/today_white_20dp.png')
+	}
+
+	.T-axO .J-JN-M-I-JG{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png')
+	}
+
+	.bs1 + .bs3::before, .btj + .aD::before{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_outline_blank_white_20dp.png')
+	}
+
+	.bs1:checked + .bs3::before, .btj:checked + .aD::before{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_white_20dp.png')
+	}
+
+	.xY > .T-Jo{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_outline_blank_white_20dp.png')
+	}
+
+	.xY > .T-Jo-Jp{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_white_20dp.png')
+	}
+
+	.brq{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/archive_white_20dp.png')
+	}
+
+	.bru{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png')
+	}
+
+	.brs{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/mark_as_unread_white_20dp.png')
+	}
+
+	.brv{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png')
+	}
+
+	td.apU > .T-KT.aXw::before{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/star_border_white_20dp.png')
+	}
+
+	td.oZ-x3::before{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/drag_indicator_white_20dp.png')
+	}
+
+	.aVb{
+		background: no-repeat url(//ssl.gstatic.com/ui/v1/icons/mail/wbt/hangouts_white_icon16.png)
+	}
+
+	.bAO{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/drafts_white_20dp.png')
+	}
+
+	.bq5{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/move_to_inbox_white_20dp.png')
+	}
+
+	.brr{
+		background-image: url('https://www.gstatic.com/images/icons/material/system/1x/drafts_white_20dp.png')
 	}
 }
