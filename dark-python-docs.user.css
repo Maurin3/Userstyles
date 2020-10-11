@@ -2,7 +2,7 @@
 @name         Dark Python Docs
 @description  Dark theme for Python Docs.
 @namespace    https://github.com/Maurin3
-@version      1.0.2
+@version      1.0.3
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -73,6 +73,9 @@ pre > .n, pre > .p, pre > .o, pre > .go, pre > span {
 }
 pre > .gr{
     color: #f76060 !important;
+}
+pre > .c1{
+    color: #777777 !important;
 }
 a {
     color: #5dc5ff !important;
