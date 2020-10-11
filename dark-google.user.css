@@ -12,7 +12,7 @@
 
 @-moz-document url-prefix("https://www.google.com"){
 /* Header */
-	.sfbg, #hdtbSum, .jNmzwc, .Lj9fsd, .jZWadf{
+	.sfbg, #hdtbSum, .jNmzwc, .Lj9fsd, .jZWadf, .big{
 		background-color: #222222;
 	}
 
@@ -56,7 +56,7 @@
 		color: #DFDFDF;
 	}
 	
-	.gb_Rb>.gb_Qb:hover, .gb_Ab:hover{
+	.gb_Rb>.gb_Qb:hover, .gb_Ab:hover, .jhp.big, .ctr-p{
 		background-color: #333333;
 	}
 	
@@ -80,7 +80,7 @@
 	}
 	
 /* Body */
-	body, #main, #appbar, .mw, #cnt, .cUezCb{
+	body, #main, #appbar, .mw, #cnt, .cUezCb, #rhs .VjDLd, #rhs .kp-blk{
 		background-color: #333333;
 	}
 	
@@ -111,7 +111,7 @@
 		color: #DFDFDF;
 	}
 	
-	.f, .f a:link, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .sMi44c:hover .WGvvNb, .sMi44c:hover.WGvvNb, .di3YZe,.qzEoUe {
+	.f, .f a:link, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .sMi44c:hover .WGvvNb, .sMi44c:hover.WGvvNb, .di3YZe,.qzEoUe, .IsZvec {
 		color: #828282;
 	}
 	
@@ -220,8 +220,8 @@
 		color: #DFDFDF;
 	}
 }
-	
-	
+
+
 @-moz-document url-prefix("https://mail.google.com/mail/u/") {
 /* Loading Screen */
 	#loading {
@@ -410,7 +410,7 @@
 		color: #FFFFFF;
 	}
 
-	/* List */
+/* List */
 	.x7, .yO{
 		color: #FFFFFF;
 		background-color: #444444;
@@ -447,6 +447,25 @@
 	.amr > .wR.nr{
 		background-color: transparent;
 		color: #222;
+	}
+	
+	.alO, .r4{
+		background-color: #444444;
+		color: #DFDFDF;
+	}
+	
+	.Ze{
+		background-color: #555555;
+	}
+	
+	.alP{
+		color: #4285f4;
+	}
+	
+	.alB, .alD{
+		border: 1px solid #333333;
+		background-color: #333333;
+		color: #DFDFDF;
 	}
 
 /* Widgets */
