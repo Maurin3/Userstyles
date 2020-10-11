@@ -9,7 +9,7 @@ Some useful userstyles :wink:
 
 | Userstyle                      | Install            | Version                                                                            |
 |--------------------------------|:------------------:|:----------------------------------------------------------------------------------:|
-| Dark Python Docs               | [install][dpd-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.0-C4246A.svg "Version 1.0.0") |
+| Dark Python Docs               | [install][dpd-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.1-C4246A.svg "Version 1.0.1") |
 | Dark Stylus                    | [install][dst-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.3-C4246A.svg "Version 1.0.3") |
 | Dark Odoo Docs                 | [install][dod-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.2-C4246A.svg "Version 1.0.2") |
 

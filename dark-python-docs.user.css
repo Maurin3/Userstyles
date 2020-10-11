@@ -2,7 +2,7 @@
 @name         Dark Python Docs
 @description  Dark theme for Python Docs.
 @namespace    https://github.com/Maurin3
-@version      1.0.0
+@version      1.0.1
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -67,6 +67,15 @@ a {
 }
 .field-odd{
     background-color: #222222 !important;
+}
+table.docutils th{
+	background-color:#111111;
+}
+table.docutils tr.row-even td{
+	background-color:#222222;
+}
+table.docutils td{
+	background-color:#333333;
 }
 #outdated-warning{
     background-color: #350000 !important;
