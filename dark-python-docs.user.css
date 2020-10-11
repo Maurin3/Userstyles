@@ -2,7 +2,7 @@
 @name         Dark Python Docs
 @description  Dark theme for Python Docs.
 @namespace    https://github.com/Maurin3
-@version      1.0.3
+@version      1.0.4
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -52,6 +52,7 @@ code.docutils, .admonition{
 pre{
     background-color: #4a4a4a !important;
     border-color: #4a4a4a !important;
+	color: #DFDFDF;
 }
 pre > .gp{
     color: #eeaa73 !important;
