@@ -1,4 +1,5 @@
 # Userstyles
+
 Some useful userstyles :wink:
 
 ## Installation
@@ -25,3 +26,6 @@ These userstyles are automatically updated within Stylus. You can click on "chec
 ## Other useful userstyles
 
 * [GitHub Dark by StylishThemes](https://github.com/StylishThemes/GitHub-Dark)
+* [Stack Overflow Dark by StylishThemes](https://github.com/StylishThemes/StackOverflow-Dark)
+* [Wikipedia Dark by StylishThemes](https://github.com/StylishThemes/Wikipedia-Dark)
+* [Dark GitLab by vednoc](https://gitlab.com/vednoc/dark-gitlab)
