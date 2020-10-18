@@ -2,7 +2,7 @@
 @name         Dark Google
 @description  Dark theme for Google.
 @namespace    https://github.com/Maurin3
-@version      1.0.2
+@version      1.0.0
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -203,7 +203,33 @@
 	}
 	
 	.LXqMce >.Wkr6U {
-		color: #DFDFDF
+		color: #DFDFDF;
+	}
+	
+	.I6TXqe, .MGqjK, .vk_c, .yyjhs, .ep3ODe .lgJJud{
+		background-color: #333333;
+	}
+
+	.IZACzd, .hDeAhf, .jleFbf, .dbg0pd, a.rllt__link, .ep3ODe .V2Zq0e, .iKt1P{
+		color: #DFDFDF;
+	}
+	
+	.MGqjK, .H73aad{
+		border: 0px solid #dfe1e5;
+	}
+	
+	.fJiQld{
+		color: #64a1ff;
+	}
+	
+	.WpKAof:hover, .H73aad, .uMdZh:hover{
+		background-color: #222222;
+	}
+	
+	#hdtb-msb .hdtb-tl-sel, #hdtb-msb .hdtb-tl-sel:hover, .hdtb-tl:hover, #hdtb-tls:hover{
+		border: 0px;
+		background-color: #222222;
+		background-image: none;
 	}
 	
 	
