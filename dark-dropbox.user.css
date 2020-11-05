@@ -1,0 +1,246 @@
+/* ==UserStyle==
+@name         Dark Dropbox
+@description  Dark theme for Dropbox.
+@namespace    https://github.com/Maurin3
+@version      1.0.0
+@author       Maurin3
+@homepageURL  https://github.com/Maurin3/Userstyles
+@supportURL   https://github.com/Maurin3/Userstyles/issues
+@updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-dropbox.user.css
+@advanced dropdown syntax-theme "Syntax theme" {
+    Default "Default" <<<EOT
+    /*! Default *\/  EOT;
+    Monokai "Monokai" <<<EOT
+    /*! Monokai *\/
+		.texthtml {
+            background-color: #1c1c1c;
+        }
+		.highlight .c{
+			color: #75715e;
+		}
+		.highlight .nt, .highlight .cp{
+			color: #f92672;
+		}
+		.highlight .nc, .highlight .p, .highlight .nn, .highlight .na, .highlight .nb, .highlight .o{
+			color: #FFFFFF;
+		}
+		.highlight .k, .highlight .kp{
+			color: #a6e22e;
+		}
+		.highlight .mh, .highlight .mi, .highlight .kt, .highlight .kc{
+			color:#ae81ff;
+		}
+		.highlight .nd{
+			color: #9effff;
+		}
+		.highlight .s2, .highlight .s1, .highlight .sx{
+			color: #e6db74;
+		}
+        EOT;
+}
+==/UserStyle== */
+
+@-moz-document  regexp("https://.*dropbox\.com/.*"), regexp("https://.*dropboxusercontent\\.com/.*") {
+:root {
+	--color__black: #fff;
+	--color__black--5: #0d0d0d;
+	--color__black--15: #262626;
+	--color__black--25: #404040;
+	--color__black--40: #666666;
+	--color__black--60: #999999;
+	--color__black--80: #cccccc;
+	--color__black--90: #e0e0e0;
+	--color__black--95: #f2f2f2;
+	--color__candy__apple--80: #ff002e;
+	--color__crimson--5: hsl(340, 43%, 5%);
+	--color__crimson--100: hsl(340, 100%, 70%);
+	--color__dbx__blue--100: #0061ff;
+	--color__french__vanilla--100: hsl(43, 100%, 17%);
+	--color__french__vanilla--120: hsl(43, 97%, 28%);
+	--color__french__vanilla--20: hsl(43, 100%, 5%);
+	--color__sapphire--100: hsl(228, 82%, 72%);
+	--color__sapphire--110: hsl(228, 100%, 82%);
+	--color__sapphire--170: hsl(228, 46%, 83%);
+	--color__sapphire--180: hsl(229, 88%, 91%);
+	--color__sapphire--20: hsl(219, 100%, 15%);
+	--color__sapphire--5: hsl(217, 100%, 4%);
+	--color__sapphire--80: hsl(225, 71%, 57%);
+	--color__sapphire--90: hsl(225, 71%, 63%);
+	--color__white: #000;
+	--color__opacity--darken1: hsla(0, 0%, 100%, 0.1);
+	--color__opacity--darken2: hsla(0, 0%, 100%, 0.15);
+	--color__opacity--darken3: hsla(0, 0%, 100%, 0.2);
+	--color__opacity--lighten1: rgba(0, 0, 0, 0.06);
+	--color__opacity--lighten2: rgba(0, 0, 0, 0.12);
+	--color__opacity--lighten3: rgba(0, 0, 0, 0.18);
+	--color__success--light: hsl(72, 80%, 52%);
+	--color__success--dark: hsl(99, 100%, 75%);
+	--color__warning--light: hsl(45, 96%, 36%);
+	--color__warning--dark: hsl(39, 100%, 70%);
+	--color__error--light: hsl(16, 93%, 46%);
+	--color__error--dark: hsl(341, 100%, 70%);
+
+	--boxshadow__elevation0: 0 0 0 0 transparent;
+	--boxshadow__elevation1: 0 0 12px 0 rgba(255, 255, 255, 0.12);
+	--boxshadow__elevation2: 0 0 40px 0 rgba(255, 255, 255, 0.08);
+}
+
+.maestro.js-focus-visible,
+body{
+	min-height: 100%;
+	background: #000000;
+}
+	
+body,
+input,
+textarea,
+select,
+button,
+.normal {
+	color: var(--color__black);
+}
+
+.maestro .maestro-app,
+.maestro .page-header,
+.rc-collapsable-section .rc-collapsable-section__header,
+.rc-collapsable-section .rc-collapsable-section__header-tag,
+.rc-ftf-dropdown {
+	background-color: var(--color__white);
+}
+
+.page-header-text,
+.mc-table,
+._3xQRkj5dQm,
+.mc-tip-card-description{
+	color: #cdd9e5;
+}
+
+.mc-button-secondary {
+	border: 1px solid #c1c7cd;
+	color: #cdd9e5;
+	background-color: #000;
+}
+
+.mc-table-row,
+.chat-bubble.targeted-bubble {
+	background-color: #000;
+}
+
+.react-file-viewer,
+.react-file-viewer__preview {
+	background-color: #060809;
+}
+
+._5hRhvsTRDu,
+._2PGvvyezID,
+._1I6XjY7iD9,
+.sc-comment-stream-editor .sc-comment-editor-focus-container,
+.maestro .maestro-tab-nav .c-tabs__bar,
+.trash-restore-files-tip,
+.mc-tip-card{
+	background: black;
+}
+	
+.maestro .c-tabs__tab--selected,
+.redesign .share-page-recents-tab .share-page-file-row__unmounted-folder-name, .redesign .share-page-recents-tab .share-page-folder-row__unmounted-folder-name, .redesign .share-page-folders-tab .share-page-file-row__unmounted-folder-name, .redesign .share-page-folders-tab .share-page-folder-row__unmounted-folder-name, .redesign .share-page-files-tab .share-page-file-row__unmounted-folder-name, .redesign .share-page-files-tab .share-page-folder-row__unmounted-folder-name,
+.maestro .share-page-view .share-page-recents-tab .share-page-file-row__folder-name, .maestro .share-page-view .share-page-recents-tab .share-page-folder-row__folder-name, .maestro .share-page-view .share-page-folders-tab .share-page-file-row__folder-name, .maestro .share-page-view .share-page-folders-tab .share-page-folder-row__folder-name, .maestro .share-page-view .share-page-files-tab .share-page-file-row__folder-name, .maestro .share-page-view .share-page-files-tab .share-page-folder-row__folder-name,
+.mc-popover,
+.redesign .share-page-recents-tab .share-page-file-row__size-text, .redesign .share-page-recents-tab .share-page-folder-row__size-text, .redesign .share-page-folders-tab .share-page-file-row__size-text, .redesign .share-page-folders-tab .share-page-folder-row__size-text, .redesign .share-page-files-tab .share-page-file-row__size-text, .redesign .share-page-files-tab .share-page-folder-row__size-text,
+.share-page-recents-tab .time-invited-col--pagelet, .share-page-recents-tab .size-col--pagelet, .share-page-folders-tab .time-invited-col--pagelet, .share-page-folders-tab .size-col--pagelet, .share-page-files-tab .time-invited-col--pagelet, .share-page-files-tab .size-col--pagelet,
+.maestro #links-view .filename-col a, .maestro #links-view .filename-col button,
+.maestro #links-view .created-col,
+.maestro #links-view #links-sort .sortable-column-header span{
+	color: #cdd9e5;
+}
+	
+.maestro #links-view #links-sort{
+	background-color: #000;
+}
+
+.sc-comment-stream-editor .sc-comment-editor-focus-container {
+	border: 1px solid rgba(255, 255, 255, .15);
+}
+
+._5hRhvsTRDu {
+	border-color: #1f2123;
+}
+
+.react-file-viewer .mc-button-primary {
+	background-color: var(--color__theme__primary);
+}
+
+a,
+.sc-annotation-label .mc-tertiary-link-button,
+.documentation-pane__push-pane-button,
+.documentation-pane__prev-versions-link,
+.plan-status-section__infohead{
+	color: var(--color__theme__primary);
+}
+
+.documentation-pane,
+.documentation-pane__section-title,
+.documentation-pane .file_activity_summary-message {
+	color: #cad3e3;
+}
+
+.documentation-pane .file-metadata__field-name {
+	color: #7c8c9c;
+}
+
+.documentation-pane .file-metadata__field-value {
+	color: #cdd9e5;
+}
+
+.chat-bubble-arrow {
+	border-color: transparent transparent #000 transparent;
+}
+
+.chat-bubble,
+.chat-bubble-bottom,
+.chat-bubble-left,
+.chat-bubble-right {
+	box-shadow: 0px 1px 2px rgba(255, 255, 2555, 0.1);
+	border: 1px solid rgba(178, 187, 194, 0.1);
+}
+
+.chat-bubble-arrow-border {
+	border-color: transparent transparent rgba(178, 187, 194, 0.1) transparent;
+}
+
+.preview-toolbar-container .preview-toolbar-overlay {
+	background-color: #252728;
+}
+
+.preview-toolbar-container .toolbar-button-entry {
+	color: black;
+}
+
+.plan-status-section__icon > img{
+	content: url('https://dl-web.dropbox.com/account_photo/get/dbaphid%3AAAD7HBH7dk1Zrm4ggUzVanEmXXNBMVuKN2Q?size=128x128&vers=1515961272754');
+}
+
+iframe.previewhtml, .texthtml{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color__black--15);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color__black--40);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color__black--60);
+}
+
+/* Code */
+/*[[syntax-theme]]*/
+}
