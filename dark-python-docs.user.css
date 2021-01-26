@@ -2,7 +2,7 @@
 @name         Dark Python Docs
 @description  Dark theme for Python Docs.
 @namespace    https://github.com/Maurin3
-@version      1.0.4
+@version      1.0.5
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -52,7 +52,7 @@ code.docutils, .admonition{
 pre{
     background-color: #4a4a4a !important;
     border-color: #4a4a4a !important;
-	color: #DFDFDF;
+    color: #DFDFDF;
 }
 pre > .gp{
     color: #eeaa73 !important;
@@ -85,13 +85,13 @@ a {
     background-color: #222222 !important;
 }
 table.docutils th{
-	background-color:#111111;
+    background-color:#111111;
 }
 table.docutils tr.row-even td{
-	background-color:#222222;
+    background-color:#222222;
 }
 table.docutils td{
-	background-color:#333333;
+    background-color:#333333;
 }
 #outdated-warning{
     background-color: #350000 !important;
@@ -99,6 +99,9 @@ table.docutils td{
 }
 #sidebarbutton{
     background-color: #4a4a4a !important;
+}
+dt:target, span.highlighted{
+    background-color: #93872c;
 }
 
 }

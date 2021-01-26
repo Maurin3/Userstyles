@@ -10,7 +10,7 @@ Some useful userstyles :wink:
 
 | Userstyle                      | Install            | Version                                                                            |
 |--------------------------------|:------------------:|:----------------------------------------------------------------------------------:|
-| Dark Python Docs               | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][dpd-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.4-C4246A.svg "Version 1.0.4") |
+| Dark Python Docs               | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][dpd-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.5-C4246A.svg "Version 1.0.5") |
 | Dark Stylus                    | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][dst-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.3-C4246A.svg "Version 1.0.3") |
 | Dark Odoo Docs                 | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][dod-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.2-C4246A.svg "Version 1.0.2") |
 | Dark Dropbox                   | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][ddp-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.0-C4246A.svg "Version 1.0.0") |
