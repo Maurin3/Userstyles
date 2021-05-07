@@ -1,0 +1,85 @@
+/* ==UserStyle==
+@name         New Dark Odoo Docs
+@description  New Dark theme for Odoo Docs.
+@namespace    https://github.com/Maurin3
+@version      1.0.0
+@author       Maurin3
+@homepageURL  https://github.com/Maurin3/Userstyles
+@supportURL   https://github.com/Maurin3/Userstyles/issues
+@updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-odoo-docs.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.odoo.com/documentation/"){
+    header.o_main_header,
+    .o_side_nav,
+    .o_side_nav ul .o_deepest_active_toc_entry,
+    main,
+    footer .o_get_help{
+        background-color: #222222;
+    }
+    
+    .btn{
+        color: #DFDFDF;
+    }
+    
+    .o_side_nav,
+    .o_side_nav ul .o_deepest_active_toc_entry{
+        color: #939598 !important;
+    }
+    
+    .current,
+    main{
+        color: #FFFFFF;
+    }
+    
+    #wrap main article.doc-body section > h1, 
+    #wrap main article.doc-body section > .h1,
+    #wrap main article.doc-body section > h2, 
+    #wrap main article.doc-body section > .h2,
+    #wrap main article.doc-body section > h3, 
+    #wrap main article.doc-body section > .h3,
+    #wrap main article.doc-body section > h4, 
+    #wrap main article.doc-body section > .h4,
+    #wrap main article.doc-body section > h5, 
+    #wrap main article.doc-body section > .h5,
+    #wrap main article.doc-body section > h6, 
+    #wrap main article.doc-body section > .h6{
+        color: #FFFFFF;
+    }
+    
+    #wrap code, pre{
+        background-color: #444444;
+        border: 1px solid #444444;
+    }
+    
+    #wrap main .alert code{
+        background-color: #333333 !important;
+    }
+    
+    #wrap main .alert.alert-note {
+        border-color: #0dc2e8;
+        background-color: #011215;
+        color: #0cb5d7;
+    }
+    
+    #wrap main .alert.alert-note > .alert-title,
+    #wrap main .alert.alert-note > h3,
+    #wrap main .alert.alert-note > .h3 {
+        color: #099fbd;
+    }
+    
+    .table {
+        --bs-table-bg: rgba(255, 255, 255, .1);
+        --bs-table-striped-color: #DFDFDF;
+        --bs-table-striped-bg: rgba(0, 0, 0, .25);
+        --bs-table-active-color: #DFDFDF;
+        --bs-table-active-bg: rgba(0, 0, 0, 0.4);
+        --bs-table-hover-color: #DFDFDF;
+        --bs-table-hover-bg: rgba(0, 0, 0, .5);
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #DFDFDF;
+        vertical-align: top;
+        border-color: #dee2e6;
+    }
+}
