@@ -7,9 +7,93 @@
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
 @updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-odoo-docs.user.css
+@advanced dropdown syntax-theme "Syntax theme" {
+    Default "Default" <<<EOT
+    /*! Default *\/
+        /*! Set up background *\/
+        .highlight > pre{
+            background-color: #575757;
+        }
+        #wrap main div[class^="highlight"]{
+            border: 1px solid #575757;
+            border-radius: 5px;
+        }
+        #wrap code,
+        #wrap main .alert code{
+            background-color: #575757 !important;
+            color: #DFDFDF;
+            border: 1px solid #575757 !important;
+            border-radius: 5px;
+        }
+        /*! Code colors *\/
+        .highlight .nt{
+            color: rgb(156, 252, 159) !important;
+        }
+        .highlight .na, 
+        .highlight .bp,
+        .highlight .k,
+        .highlight .gp,
+        .highlight .nb,
+        .highlight .kc{
+            color: rgb(128, 147, 255) !important;
+        }
+        .highlight .s, 
+        .highlight .s1, 
+        .highlight .s2{
+            color: rgb(255, 89, 255) !important;
+        }
+        .highlight .nc, 
+        .highlight .go{
+            color: rgb(30, 144, 255) !important;
+        }
+        .highlight .ne{
+            color: #ea8a8a !important;
+            background-color: transparent !important;
+        }
+        .highlight .p,
+        .highlight .n{
+            color: #FFFFFF !important;
+        }
+        .highlight .nf{
+            color: #c8bfe4 !important;
+        }
+        .highlight .mi{
+            color: #d4a652 !important;
+        }
+        EOT;
+    Monokai "Monokai" <<<EOT
+    /*! Monokai *\/
+        /*! Set up background *\/
+        .highlight > pre{
+            background-color: #1c1c1c;
+        }
+        #wrap main div[class^="highlight"]{
+            border: 1px solid #1c1c1c;
+            border-radius: 5px;
+        }
+        #wrap code,
+        #wrap main .alert code{
+            background-color: #1c1c1c !important;
+            color: #DFDFDF;
+            border: 1px solid #1c1c1c !important;
+            border-radius: 5px;
+        }
+        /*! Code colors *\/
+        .highlight .nt{
+            color: rgb(249, 38, 114) !important;
+        }
+        .highlight .na{
+            color: rgb(166, 226, 41) !important;
+        }
+        .highlight .s{
+            color: rgb(230, 219, 116) !important;
+        }
+        EOT;
+}
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.odoo.com/documentation/"){
+    body,
     header.o_main_header,
     .o_side_nav,
     .o_side_nav ul .o_deepest_active_toc_entry,
@@ -27,6 +111,7 @@
         color: #939598 !important;
     }
     
+    body,
     .current,
     main{
         color: #FFFFFF;
@@ -43,17 +128,9 @@
     #wrap main article.doc-body section > h5, 
     #wrap main article.doc-body section > .h5,
     #wrap main article.doc-body section > h6, 
-    #wrap main article.doc-body section > .h6{
+    #wrap main article.doc-body section > .h6,
+    aside.o_page_toc h3, aside.o_page_toc .h3{
         color: #FFFFFF;
-    }
-    
-    #wrap code, pre{
-        background-color: #444444;
-        border: 1px solid #444444;
-    }
-    
-    #wrap main .alert code{
-        background-color: #333333 !important;
     }
     
     #wrap main .alert.alert-note {
@@ -82,4 +159,9 @@
         vertical-align: top;
         border-color: #dee2e6;
     }
+    
+    
+    
+    /* Code */
+    /*[[syntax-theme]]*/
 }
