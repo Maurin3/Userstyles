@@ -2,160 +2,217 @@
 @name         Dark Odoo Docs
 @description  Dark theme for Odoo Docs.
 @namespace    https://github.com/Maurin3
-@version      1.0.2
+@version      2.0.0
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
 @updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-odoo-docs.user.css
-@advanced dropdown syntax-theme "Syntax theme" {
-    Default "Default" <<<EOT
-    /*! Default *\/
-        .highlight > pre{
-            background-color: #444444;
-        }
-        code{
-            background-color: #575757;
-            color: #DFDFDF;
-        }
-        .code-field-name, .code-field-body strong{
-            color: #FFFFFF !important;
-        }
-        .o_main_header > .o_sub_nav .collapse .nav > li.dropdown > a.dropdown-toggle{
-            background-color: #000000;
-            color: #DFDFDF;
-        } EOT;
-    Monokai "Monokai" <<<EOT
-    /*! Monokai *\/
-        .highlight > pre, pre{
-            background-color: #1c1c1c;
-        }
-        code, .code{
-            background-color: #1c1c1c;
-            color: #e6db74;
-        }
-        .code-field-name, .code-field-body strong{
-            color: #FFFFFF !important;
-        }
-        .o_main_header > .o_sub_nav .collapse .nav > li.dropdown > a.dropdown-toggle{
-            background-color: #000000;
-            color: #DFDFDF;
-        }
-        .highlight .nn,.highlight .n,.highlight .bp,.highlight .s1,.highlight .nd,.highlight .s, .highlight .s2, .highlight .nx{
-            color: #e6db74;
-        }
-        .highlight .kn,.highlight .k, .highlight .kd{
-            color: #a6e22e;
-        }
-        .highlight .nf,.highlight .nc,.highlight .nb, .highlight .na, .highlight .nt{
-            color: #f92672;
-        }
-        .highlight .c1{
-            color: grey;
-        }
-        .highlight .kc, .highlight .mi, .highlight .si{
-            color: #66d9ef;
-        }
-        EOT;
-}
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.odoo.com/documentation/"){
-    /* Menu */
-    .o_main_header.o_scrolled .o_sub_nav{
-        background-color: #000000;
+@-moz-document url-prefix("https://www.odoo.com/documentation/") {
+    /* Header */
+    header.o_main_header {
+        background-color: #222222;
     }
 
-    .o_main_header.o_inverted:not(.o_scrolled) > .o_sub_nav .nav > li > a, .o_main_header.o_inverted:not(.o_scrolled) > .o_sub_nav .o_app_name_title{
-        background-color: transparent !important;
-    }
-
-    .o_main_header > .o_sub_nav .collapse .nav > li.dropdown.open .dropdown-menu,
-    .o_main_header > .o_sub_nav .collapse .nav > li.dropdown.open{
-        background-color: #000000;
+    header.o_main_header .o_search_wrapper .o_search input {
+        background-color: #222222;
+        border: 1px solid #808080;
         color: #DFDFDF;
     }
 
-    /* Titles */
-    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    header.o_main_header .o_search_wrapper .o_search input::placeholder {
         color: #DFDFDF;
     }
 
-    h2{
-        border-bottom-color: transparent !important;
-    }
-
-    /* Side menu */
-    .navbar-aside > ul > li{
-        background-color: #333333;
-    }
-
-    .navbar-aside > ul > li > a{
-        color: #DFDFDF !important;   
-    }
-
-    .o_main_header > .o_sub_nav > .container .nav > li > a,
-    .navbar-aside ul li > a,
-    .navbar-aside .gith-container .gith-link{
-        color: #CCCCCC !important;
-    }
-
-    .o_main_header > .o_sub_nav .collapse .nav > li.dropdown.open .dropdown-menu > li > a{
+    header.o_main_header .o_search_wrapper .o_search .btn,
+    .btn {
         color: #DFDFDF;
     }
 
-    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
-        background-color: #1b1b1b;
+    .btn:hover {
+        color: #b4c9dd;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #555 !important;
+    }
+
+    /* Navbar */
+    .o_side_nav {
+        background-color: #222222;
+    }
+
+    .o_side_nav ul .o_deepest_active_toc_entry {
+        background-color: #232323;
+        border-left: 3px solid #232323;
+    }
+
+    .o_side_nav ul li a,
+    .o_page_toc_nav ul li a {
+        color: #DFDFDF;
     }
 
     /* Main */
-    #wrap{
-        background-color: #222222 !important;
-    }
-
-    /* Content */
-    article, .o_content.row{
-        background-color: #252525;
+    body,
+    #wrap {
+        background-color: #222222;
         color: #DFDFDF;
     }
 
-    /* Card */    
-    main.index .card figcaption{
+    #wrap main .toctree-wrapper a[href="#"] {
         color: #DFDFDF;
-        background-color: #333333;
-        box-shadow: inset 0 1px 0 #333333;
     }
 
-    img.img-responsive{
-        box-shadow: 0 3px 15px #575757;
-        border-color: #575757;
+    #wrap main article.doc-body section > h2,
+    #wrap main article.doc-body section > .h2 {
+        color: #DFDFDF;
     }
 
+    aside.o_page_toc h3,
+    aside.o_page_toc .h3 {
+        color: #DFDFDF;
+    }
+
+    .table {
+        color: #C6C6C6;
+        --bs-table-bg: transparent;
+        --bs-table-striped-color: #808080;
+        --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+        --bs-table-active-color: #808080;
+        --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+        --bs-table-hover-color: #FFFFFF;
+        --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    }
+
+    #wrap main div[class^="highlight"],
+    #wrap main div[class^="highlight"] div[class^="highlight"] {
+        border-color: transparent;
+    }
+
+    .highlight {
+        background-color: transparent;
+    }
+
+    /* Footer */
+    footer .o_get_help {
+        background-color: #232323;
+    }
 
     /* Alerts */
-    main .alert.alert-warning{
-        background-color: #2e2705 !important;
-        color: #d3ad78 !important;
-        border-color: #eb9114 !important;
+    #wrap main .alert.alert-note,
+    #wrap main .alert.alert-info,
+    #wrap main .alert[class^="admonition"] {
+        border-color: #6399a4;
+        background-color: #00232f;
+        color: #87d4e4;
     }
-    main .alert, .alert-info{
-        background-color: #0e1f25 !important;
-        color: #92b0b9 !important;
-        border-color: #469ab9 !important;
+
+    #wrap main .alert.alert-note > .alert-title,
+    #wrap main .alert.alert-note > h3,
+    #wrap main .alert.alert-note > .h3,
+    #wrap main .alert.alert-info > .alert-title,
+    #wrap main .alert.alert-info > h3,
+    #wrap main .alert.alert-info > .h3,
+    #wrap main .alert[class^="admonition"] > .alert-title,
+    #wrap main .alert[class^="admonition"] > h3,
+    #wrap main .alert[class^="admonition"] > .h3 {
+        color: #87d4e4;
     }
-    main .alert.alert-go_to{
-        border-color: #875A7B !important;
-        background-color: #13000e !important;
-        color: #b98aac !important;
+
+    #wrap main .alert.alert-tip,
+    #wrap main .alert.tip {
+        border-color: #649796;
+        background-color: #002f2e;
+        color: #7ac0be;
     }
-    main .alert.alert-go_to > h3.alert-title{
-        color: #b98aac !important;
+
+    #wrap main .alert.alert-tip > .alert-title,
+    #wrap main .alert.alert-tip > h3,
+    #wrap main .alert.alert-tip > .h3,
+    #wrap main .alert.tip > .alert-title,
+    #wrap main .alert.tip > h3,
+    #wrap main .alert.tip > .h3 {
+        color: #7ac0be;
     }
-    main .alert.alert-danger{
-        background-color: #240f0f !important;
-        color: #c78785 !important;
-        border-color: #d0352f !important;
+
+    #wrap main .alert-warning {
+        color: #c0b187;
+        background-color: #2d2200;
+        border-color: #f9dcb3;
+    }
+
+    #wrap main .alert.alert-warning > .alert-title,
+    #wrap main .alert.alert-warning > h3,
+    #wrap main .alert.alert-warning > .h3,
+    #wrap main .alert.warning > .alert-title,
+    #wrap main .alert.warning > h3,
+    #wrap main .alert.warning > .h3 {
+        color: #c0b187;
+    }
+
+    #wrap main .alert-danger {
+        color: #f2a8af;
+        background-color: #2d0004;
+        border-color: #e18a92;
+    }
+
+    #wrap main .alert.alert-danger > .alert-title,
+    #wrap main .alert.alert-danger > h3,
+    #wrap main .alert.alert-danger > .h3 {
+        color: #f2a8af;
+    }
+
+    #wrap main .alert.alert-go_to {
+        border-color: #756470;
+        background-color: #2b001f;
+    }
+
+    #wrap main .alert.alert-go_to > .alert-title,
+    #wrap main .alert.alert-go_to > h3,
+    #wrap main .alert.alert-go_to > .h3,
+    #wrap main .alert.alert-go_to a {
+        color: #eac0de;
     }
 
     /* Code */
-    /*[[syntax-theme]]*/
+    #wrap code,
+    #wrap main div[class^="highlight"] pre {
+        border-radius: 7px;
+        border-color: transparent;
+        background-color: #343434;
+    }
+    #wrap main .alert code {
+        background-color: #343434 !important;
+    }
+
+    .highlight .kd,
+    .highlight .na,
+    .highlight .bp,
+    .highlight .kc {
+        color: #6767ff;
+    }
+
+    .highlight .s1,
+    .highlight .s,
+    .highlight .s2,
+    .highlight .si {
+        color: #d571d5;
+    }
+
+    .highlight .nt {
+        color: #358835;
+    }
+
+    .highlight .nc,
+    .highlight .nb,
+    .highlight .nn {
+        color: #3b3bff;
+    }
+    .highlight .k,
+    .highlight .kn,
+    .highlight .go,
+    .highlight .gp {
+        color: #a7a7ff;
+    }
 }
