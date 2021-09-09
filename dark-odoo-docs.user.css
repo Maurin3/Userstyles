@@ -2,7 +2,7 @@
 @name         Dark Odoo Docs
 @description  Dark theme for Odoo Docs.
 @namespace    https://github.com/Maurin3
-@version      2.0.0
+@version      2.0.1
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -94,6 +94,14 @@
         background-color: transparent;
     }
 
+    #wrap main.o_has_code_column article.doc-body .content-switcher .tab-content {
+        border-radius: 0 0 7px 7px;
+    }
+    
+    #wrap main.o_has_code_column article.doc-body .content-switcher .nav-tabs .nav-link.active{
+        border-radius: 7px 7px 0 0;
+    }
+
     /* Footer */
     footer .o_get_help {
         background-color: #232323;
@@ -175,6 +183,18 @@
         color: #eac0de;
     }
 
+    #wrap main .alert.alert-exercise {
+        border-color: #ccc;
+        background-color: #383838;
+        color: #ddd;
+    }
+
+    #wrap main .alert.alert-exercise > .alert-title,
+    #wrap main .alert.alert-exercise > h3,
+    #wrap main .alert.alert-exercise > .h3 {
+        color: #ddd;
+    }
+
     /* Code */
     #wrap code,
     #wrap main div[class^="highlight"] pre {
@@ -196,7 +216,8 @@
     .highlight .s1,
     .highlight .s,
     .highlight .s2,
-    .highlight .si {
+    .highlight .si,
+    .highlight .sd {
         color: #d571d5;
     }
 
