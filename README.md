@@ -15,12 +15,14 @@ Some useful userstyles :wink:
 | Dark Odoo Docs                 | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][dod-raw] | ![alt text](https://img.shields.io/badge/Version-2.0.0-C4246A.svg "Version 2.0.0") |
 | Dark Dropbox                   | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][ddp-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.0-C4246A.svg "Version 1.0.0") |
 | Dark Odoo Runbot               | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][dor-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.0-C4246A.svg "Version 1.0.0") |
+| Odoo for Colorblind people     | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][ocl-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.0-C4246A.svg "Version 1.0.0") |
 
 [dpd-raw]: https://github.com/Maurin3/Userstyles/raw/master/dark-python-docs.user.css
 [dst-raw]: https://github.com/Maurin3/Userstyles/raw/master/dark-stylus.user.css
 [dod-raw]: https://github.com/Maurin3/Userstyles/raw/master/dark-odoo-docs.user.css
 [ddp-raw]: https://github.com/Maurin3/Userstyles/raw/master/dark-dropbox.user.css
 [dor-raw]: https://github.com/Maurin3/Userstyles/raw/master/dark-odoo-runbot.user.css
+[ocl-raw]: https://github.com/Maurin3/Userstyles/raw/master/odoo-colorblind.user.css
 
 ## Updates
 
