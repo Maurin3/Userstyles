@@ -2,7 +2,7 @@
 @name         Odoo for Colorblind people
 @description  Change some colors in Odoo for people who suffers from colour blindness.
 @namespace    https://github.com/Maurin3
-@version      1.0.0
+@version      1.0.1
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -16,7 +16,8 @@ regexp("^http:\\/\\/localhost(:)?[0-9]{0,5}(\\/)?[a-z]{0,4}\\/web(.*)$"),
 regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web*"){
 /* Code */
 /* Bullets in kanban */
-.o_status.o_status_green, .o_status_green.o_status_bubble {
+.o_status.o_status_green, .o_status_green.o_status_bubble,
+.o_status_bubble.o_color_bubble_20{
     background-color: #0088FF !important;
 }
 
@@ -29,11 +30,11 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web*"){
 }
 
 /* Blocked/Ready in kanban columns */
-.bg-success-full{
+.bg-success-full, .bg-success, .o_status.o_status_green, .o_status_green.o_status_bubble, .o_status_green.o_calendar_invitation{
     background-color: #0088FF !important;
 }
 
-.bg-danger-full{
+.bg-danger-full, .bg-danger, .o_status.o_status_red, .o_status_red.o_status_bubble, .o_status_red.o_calendar_invitation{
     background-color: #C38000 !important;
 }
 
