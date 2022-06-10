@@ -2,7 +2,7 @@
 @name         Dark Odoo
 @description  Make all odoo.com domains dark (local version too).
 @namespace    https://github.com/Maurin3
-@version      1.0.0
+@version      1.0.1
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -35,7 +35,7 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
 
     a:hover {
-        color: var(--primary);
+        color: var(--o-cc5-link);
     }
 
     .text-secondary {
@@ -230,7 +230,7 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
 
     .o_form_view .o_form_uri > span:first-child:hover {
-        color: var(--o-color-1);
+        color: var(--o-cc5-link);
     }
 
     .o_ChatterTopbar_button.o-active {
@@ -395,7 +395,14 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
 
     .o_mail_activity .o_thread_message .o_thread_message_core .o_mail_info strong,
     .o_Activity_summary {
-        color: var(--300);
+        color: var(--300) !important;
+    }
+
+    .o_Activity_toolButton.btn {
+        color: var(--500) !important;
+    }
+    .o_ActivityBox_titleText {
+        color: var(--500);
     }
 
     .o_mail_preview .o_preview_info .o_preview_title {
@@ -1112,7 +1119,7 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
 
     .popover {
-        background-color: #4A4A4A;
+        background-color: var(--800);
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
@@ -1302,12 +1309,7 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
 
     /* Calendar view */
-    .fc-unthemed tbody {
-        background-color: var(--900);
-    }
-
-    .o_calendar_container .o_calendar_view .o_calendar_widget .fc-week-number,
-    .o_calendar_container .o_calendar_view .o_calendar_widget .fc-widget-header {
+    .fc-unthemed .fc-row {
         background-color: var(--900);
     }
 
@@ -1731,5 +1733,12 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
     .o_calendar_view .o_calendar_widget .fc-dayGridMonth-view .fc-day-number {
         color: var(--100);
+    }
+    .o_calendar_view .o_calendar_widget .o_calendar_disabled{
+        background-color: var(--700) !important;
+    }
+    .o_timeoff_dashboard, .o_timeoff_card .o_timeoff_name{
+        color: var(--100);
+        background-color: var(--900);
     }
 }
