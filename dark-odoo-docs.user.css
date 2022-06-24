@@ -2,7 +2,7 @@
 @name         Dark Odoo Docs
 @description  Dark theme for Odoo Docs.
 @namespace    https://github.com/Maurin3
-@version      2.0.2
+@version      2.0.3
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -11,21 +11,25 @@
 
 @-moz-document url-prefix("https://www.odoo.com/documentation/") {
     /* Header */
-    header.o_main_header {
+    header.o_headers, header .o_main_header {
         background-color: #222222;
     }
+    
+    header .o_subheader{
+        background-color: #343434;
+    }
 
-    header.o_main_header .o_search_wrapper .o_search input {
+    header.o_headers .o_search_wrapper .o_search input {
         background-color: #222222;
         border: 1px solid #808080;
         color: #DFDFDF;
     }
 
-    header.o_main_header .o_search_wrapper .o_search input::placeholder {
+    header.o_headers .o_search_wrapper .o_search input::placeholder {
         color: #DFDFDF;
     }
 
-    header.o_main_header .o_search_wrapper .o_search .btn,
+    header.o_headers .o_search_wrapper .o_search .btn,
     .btn {
         color: #DFDFDF;
     }
@@ -39,7 +43,7 @@
     }
 
     /* Navbar */
-    .o_side_nav {
+    .o_side_nav, .o_side_nav .o_side_nav-inner {
         background-color: #222222;
     }
 
