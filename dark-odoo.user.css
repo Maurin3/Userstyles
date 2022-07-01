@@ -444,7 +444,6 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
 
     .o_Message.o-not-discussion {
         background-color: var(--800);
-        border-bottom: 0px solid #cfd5db;
     }
 
     .o_thread_composer:not(.o_chat_mini_composer) {
@@ -463,6 +462,28 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
     .o_Message.o_Message_active a {
         color: var(--o-cc5-link);
+    }
+    
+    .o_MessageReactionGroup{
+        background-color: var(--600);
+        color:var(--300);
+    }
+    .o_MessageReactionGroup:hover {
+        border-color: var(--900);
+        color:var(--900);
+        background-color:  var(--500);
+    }
+    .o_MessageReactionGroup.o-hasUserReacted{
+        color: var(--o-cc5-link);
+        border-color: var(--o-cc5-link);
+    }
+    .o_MessageReactionGroup.o-hasUserReacted:hover{
+        border-color: var(--o-cc5-link);
+        color: var(--o-cc5-link) !important;
+        background-color:  var(--500);
+    }
+    .o_MessageReactionGroup_count.o-hasUserReacted{
+        color: inherit;
     }
 
     /* Control Panel */
