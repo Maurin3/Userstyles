@@ -2,7 +2,7 @@
 @name         Dark Odoo Docs
 @description  Dark theme for Odoo Docs.
 @namespace    https://github.com/Maurin3
-@version      2.0.3
+@version      2.0.4
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -11,11 +11,12 @@
 
 @-moz-document url-prefix("https://www.odoo.com/documentation/") {
     /* Header */
-    header.o_headers, header .o_main_header {
+    header.o_headers,
+    header .o_main_header {
         background-color: #222222;
     }
-    
-    header .o_subheader{
+
+    header .o_subheader {
         background-color: #343434;
     }
 
@@ -43,7 +44,8 @@
     }
 
     /* Navbar */
-    .o_side_nav, .o_side_nav .o_side_nav-inner {
+    .o_side_nav,
+    .o_side_nav .o_side_nav-inner {
         background-color: #222222;
     }
 
@@ -105,8 +107,8 @@
     #wrap main.o_has_code_column article.doc-body .content-switcher .tab-content {
         border-radius: 0 0 7px 7px;
     }
-    
-    #wrap main.o_has_code_column article.doc-body .content-switcher .nav-tabs .nav-link.active{
+
+    #wrap main.o_has_code_column article.doc-body .content-switcher .nav-tabs .nav-link.active {
         border-radius: 7px 7px 0 0;
     }
 
@@ -206,12 +208,38 @@
     /* Code */
     #wrap code,
     #wrap main div[class^="highlight"] pre {
-        border-radius: 7px;
         border-color: transparent;
         background-color: #343434;
     }
-    #wrap main .alert code {
+    #wrap main .alert code,
+    #wrap code:not(.file),
+    #wrap code ~ .sig-paren:not(.file),
+    #wrap code ~ .sig-param:not(.file),
+    #wrap code ~ .optional:not(.file),
+    #wrap main article.doc-body .command:not(.file),
+    #wrap main article.doc-body dl.py.class em.property:not(.file):not(:first-child),
+    #wrap main article.doc-body dl.js.class em.property:not(.file):not(:first-child),
+    #wrap main article.doc-body dl.o-definition-list.class em.property:not(.file):not(:first-child) {
         background-color: #343434 !important;
+    }
+
+    #wrap main article.doc-body dl.py > dd,
+    #wrap main article.doc-body dl.js > dd,
+    #wrap main article.doc-body dl.o-definition-list > dd,
+    #wrap main .alert code,
+    #wrap main .alert code ~ .sig-paren,
+    #wrap main .alert code ~ .sig-param,
+    #wrap main .alert code ~ .optional,
+    #wrap main .alert article.doc-body .command,
+    #wrap main article.doc-body .alert .command,
+    #wrap main .alert article.doc-body dl.py.class em.property:not(:first-child),
+    #wrap main article.doc-body dl.py.class .alert em.property:not(:first-child),
+    #wrap main .alert article.doc-body dl.js.class em.property:not(:first-child),
+    #wrap main article.doc-body dl.js.class .alert em.property:not(:first-child),
+    #wrap main .alert article.doc-body dl.o-definition-list.class em.property:not(:first-child),
+    #wrap main article.doc-body dl.o-definition-list.class .alert em.property:not(:first-child),
+    #wrap main .alert div[class^="highlight"] {
+        border-color: #343434;
     }
 
     .highlight .kd,
