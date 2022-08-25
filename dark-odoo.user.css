@@ -9,8 +9,8 @@
 @updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-odoo.user.css
 ==/UserStyle== */
 @-moz-document regexp("^https:\\/\\/[0-9]{5,}(\\-saas)?\\-[a-z0-9]{2}\\-[0-9]{1}\\-all\\.runbot[0-9]{2}\\.odoo\\.com\\/web(.*)$"),
-regexp("http:\\/\\/localhost(:)?[0-9]{0,5}(\\/)?[a-z]{0,4}\\/web(.*)$\""),
-regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
+regexp("^http:\\/\\/localhost(:)?[0-9]{0,5}(\\/)?[a-z]{0,4}\\/web(.*)"),
+regexp("^https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     body,
     .o_web_client {
         background-color: var(--900);
@@ -387,6 +387,10 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     .o_mail_preview:hover .o_preview_name {
         color: var(--100);
     }
+    
+    .o_mail_preview.o_systray_activity:hover{
+        background-color: var(--800);
+    }
 
     .o_chatter.o_chatter_composer_active .o_chatter_topbar > .btn.o_active {
         color: var(--900);
@@ -394,8 +398,8 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
 
     .o_mail_activity .o_thread_message .o_thread_message_core .o_mail_info strong,
-    .o_Activity_summary {
-        color: var(--300);
+    .o_Activity_summary, .o_ActivityBox_titleText {
+        color: var(--300) !important;
     }
 
     .o_mail_preview .o_preview_info .o_preview_title {
@@ -437,7 +441,6 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
 
     .o_Message.o-not-discussion {
         background-color: var(--800);
-        border-bottom: 0px solid #cfd5db;
     }
 
     .o_thread_composer:not(.o_chat_mini_composer) {
@@ -456,6 +459,28 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
     .o_Message.o_Message_active a {
         color: var(--o-cc5-link);
+    }
+    
+    .o_MessageReactionGroup{
+        background-color: var(--600);
+        color:var(--300);
+    }
+    .o_MessageReactionGroup:hover {
+        border-color: var(--900);
+        color:var(--900);
+        background-color:  var(--500);
+    }
+    .o_MessageReactionGroup.o-hasUserReacted{
+        color: var(--o-cc5-link);
+        border-color: var(--o-cc5-link);
+    }
+    .o_MessageReactionGroup.o-hasUserReacted:hover{
+        border-color: var(--o-cc5-link);
+        color: var(--o-cc5-link) !important;
+        background-color:  var(--500);
+    }
+    .o_MessageReactionGroup_count.o-hasUserReacted{
+        color: inherit;
     }
 
     /* Control Panel */
@@ -933,12 +958,12 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     .note-editor .note-toolbar > .btn-group .btn-group.show .dropdown-toggle {
         background-color: rgba(255, 255, 255, 0.05) !important;
     }
-    .o_form_view .o_notebook > .tab-content > .tab-pane > :first-child.oe_form_field_html,
+    /*.o_form_view .o_notebook > .tab-content > .tab-pane > :first-child.oe_form_field_html,
     .o_form_view .o_notebook > .tab-content > .tab-pane > :first-child.oe_form_field_html pre,
     .o_form_view .o_notebook > .tab-content > .tab-pane > :first-child.oe_form_field_html_text {
         background-color: var(--100) !important;
         color: var(--900) !important;
-    }
+    }*/
 
     .note-editor .note-toolbar .dropdown-menu > .dropdown-item {
         color: var(--500) !important;
@@ -991,14 +1016,14 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
         background-color: var(--900);
     }
 
-    .oe_form_field_html h1,
+    /*.oe_form_field_html h1,
     .oe_form_field_html h2,
     .oe_form_field_html h3,
     .oe_form_field_html h4,
     .oe_form_field_html h5 {
         background-color: initial;
         color: initial;
-    }
+    }*/
 
     .ace-tm .ace_meta.ace_tag {
         color: rgb(128, 147, 255) !important;
@@ -1010,7 +1035,6 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
 
     .ace-tm,
     .ace-tm .ace_keyword.ace_operator {
-        background-color: var(--900) !important;
         color: #dfdfdf !important;
     }
 
@@ -1302,7 +1326,7 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
 
     /* Calendar view */
-    .fc-unthemed tbody {
+    .fc-unthemed .fc-timeGridWeek-view tbody {
         background-color: var(--900);
     }
 
@@ -1369,6 +1393,10 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
 
     .o_calendar_sidebar_container .o_calendar_filter .o_calendar_filter_item .o_cw_filter_input_bg.o_beside_avatar .fa {
         color: var(--900);
+    }
+    
+    .o_calendar_view .o_calendar_widget .fc-timeGridDay-view div.fc-day-grid, .o_calendar_view .o_calendar_widget .fc-timeGridWeek-view div.fc-day-grid{
+        background-color: var(--900);
     }
 
     /* Pivot view */
@@ -1593,50 +1621,57 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     .o_field_widget.o_field_many2manytags .o_tag_color_10,
     .o_field_widget.o_field_many2manytags .o_tag_color_10::after {
         background-color: #135336;
-        border: 1px solid #30C381;
+        /*border: 1px solid #30C381;*/
         color: #30C381;
+        box-shadow: inset 0 0 0 1px;
     }
 
     .o_field_widget.o_field_many2manytags .o_tag_color_1,
     .o_field_widget.o_field_many2manytags .o_tag_color_1::after {
         background-color: #6a2821;
-        border: 1px solid #F06050;
+        /*border: 1px solid #F06050;*/
         color: #F06050;
+        box-shadow: inset 0 0 0 1px;
     }
 
     .o_field_widget.o_field_many2manytags .o_tag_color_11,
     .o_field_widget.o_field_many2manytags .o_tag_color_11::after {
         background-color: #362444;
-        border: 1px solid #9365B8;
+        /*border: 1px solid #9365B8;*/
         color: #9365B8;
+        box-shadow: inset 0 0 0 1px;
     }
 
     .o_field_widget.o_field_many2manytags .o_tag_color_4,
     .o_field_widget.o_field_many2manytags .o_tag_color_4::after {
         background-color: #294c5e;
-        border: 1px solid #6CC1ED;
+        /*border: 1px solid #6CC1ED;*/
         color: #6CC1ED;
+        box-shadow: inset 0 0 0 1px;
     }
 
     .o_field_widget.o_field_many2manytags .o_tag_color_2,
     .o_field_widget.o_field_many2manytags .o_tag_color_2::after {
         background-color: #593b21;
-        border: 1px solid #F4A460;
+        /*border: 1px solid #F4A460;*/
         color: #F4A460;
+        box-shadow: inset 0 0 0 1px;
     }
 
     .o_field_widget.o_field_many2manytags .o_tag_color_8,
     .o_field_widget.o_field_many2manytags .o_tag_color_8::after {
         background-color: #0f121a;
-        border: 1px solid #475577;
+        /*border: 1px solid #475577;*/
         color: #475577;
+        box-shadow: inset 0 0 0 1px;
     }
 
     .o_field_widget.o_field_many2manytags .o_tag_color_3,
     .o_field_widget.o_field_many2manytags .o_tag_color_3::after {
         background-color: #75610d;
-        border: 1px solid #F7CD1F;
+        /*border: 1px solid #F7CD1F;*/
         color: #F7CD1F;
+        box-shadow: inset 0 0 0 1px;
     }
 
     .o_field_widget.o_field_many2manytags .o_tag_color_0 {
@@ -1645,28 +1680,44 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
 
     div:not(.o_clickable_m2x_avatar) > .o_field_widget.o_field_many2manytags .o_tag_color_0 {
-        border: 1px solid var(--100);
+        /*border: 1px solid var(--100);*/
+        box-shadow: inset 0 0 0 1px;
     }
 
     .o_field_widget.o_field_many2manytags .o_tag_color_7,
     .o_field_widget.o_field_many2manytags .o_tag_color_7::after {
         background-color: #0f2e35;
-        border: 1px solid #2C8397;
+        /*border: 1px solid #2C8397;*/
         color: #2C8397;
+        box-shadow: inset 0 0 0 1px;
     }
 
     .o_field_widget.o_field_many2manytags .o_tag_color_9,
     .o_field_widget.o_field_many2manytags .o_tag_color_9::after {
         background-color: #510623;
-        border: 1px solid #D6145F;
+        /*border: 1px solid #D6145F;*/
         color: #D6145F;
+        box-shadow: inset 0 0 0 1px;
     }
 
     .o_field_widget.o_field_many2manytags .o_tag_color_6,
     .o_field_widget.o_field_many2manytags .o_tag_color_6::after {
         background-color: #713b3b;
         color: #EB7E7F;
-        border: 1px solid #EB7E7F;
+        /*border: 1px solid #EB7E7F;*/
+        box-shadow: inset 0 0 0 1px;
+    }
+    
+    .badge.badge-pill.o_field_badge.bg-success-light{
+        color: rgb(40, 167, 69) ;
+        background-color: rgba(40, 167, 69, 0.25) !important;
+        box-shadow: inset 0 0 0 1px;
+    }
+    
+    .badge.badge-pill.o_field_badge.bg-warning-light {
+        color: rgb(255, 172, 0) ;
+        background-color: rgba(255, 172, 0, 0.25) !important;
+        box-shadow: inset 0 0 0 1px;
     }
 
     /* Tooltips */
@@ -1731,5 +1782,14 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web.*") {
     }
     .o_calendar_view .o_calendar_widget .fc-dayGridMonth-view .fc-day-number {
         color: var(--100);
+    }
+    .o_timeoff_dashboard{
+        background-color: var(--900);
+    }
+    .o_timeoff_card .o_timeoff_name{
+        color: var(--300);
+    }
+    .o_calendar_view .o_calendar_widget .o_calendar_disabled{
+        background-color: var(--700) !important;
     }
 }
