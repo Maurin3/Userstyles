@@ -2,61 +2,184 @@
 @name         Dark Odoo Runbot
 @description  Dark theme for Odoo Runbot.
 @namespace    https://github.com/Maurin3
-@version      1.0.0
+@version      2.0.0
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
 @updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-odoo-runbot.user.css
+@preprocessor   stylus
+@var select theme "Theme" ["Dark", "Catppuccin"]
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://runbot.odoo.com/"){
-.navbar-light{
-	background-color: #222222 !important;
-}
-.navbar-light .navbar-nav .nav-link{
-	color: #DFDFDF;
-}
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-	color: #747474;
-}
-body{
-	background-color: #333333;
-	color: #ccc;
-}
-body, .table{
-	color: #ccc;
-}
-.bg-success-light{
-	background-color: #154800;
-}
-.bg-danger-light{
-	background-color: #590000;
-}
-.bg-info-light{
-	background-color: #07323a;
-}
-.killed, .bg-killed, .bg-killed-light{
-	background-color: #272727;   
-}
-.batch_commits{
-	background-color: #252525;
-}
-.btn-default{
-	background-color: #555555;
-	color: #c8c8c8;
-	border-color: #333333;
-} 
-.btn-info{
-	color: #FFFFFF;
-	background-color: #0b535e;
-	border-color: #0b535e;
-}	
-.badge-info{
-	background-color: #0b535e;
-	border-color: #0b535e;
-}
-.badge-warning {
-	color: #FFFFFF;
-	background-color: #584201;
-}
+    if (theme == "Dark"){
+        $rosewater = #f5e0dc
+        $flamingo = #f2cdcd
+        $pink = #f5c2e7
+        $mauve = #cba6f7
+        $red = #dc3545
+        $maroon = #eba0ac
+        $peach = #fab387
+        $yellow = #f39c1e
+        $green = #85b290
+        $teal = #00918c
+        $sky = #89dceb
+        $sapphire = #74c7ec
+        $lavender = #b4befe
+        $blue = #81bbcc
+        $bg-rosewater = #f5e0dc
+        $bg-flamingo = #f2cdcd
+        $bg-pink = #f5c2e7
+        $bg-mauve = #cba6f7
+        $bg-red = #590000
+        $bg-maroon = #eba0ac
+        $bg-peach = #fab387
+        $bg-yellow = #584201
+        $bg-green = #154800
+        $bg-teal = #0b535e
+        $bg-sky = #89dceb
+        $bg-sapphire = #74c7ec
+        $bg-lavender = #b4befe
+        $bg-blue = #07323a
+        $text = #ccc
+        $subtext1 = #005452
+        $subtext0 = #00A09D
+        $overlay2 = #9399b2
+        $overlay1 = #747474
+        $overlay0 = #6c7086
+        $surface2 = #555555
+        $surface1 = #333333
+        $surface0 = #272727
+        $base = #333333
+        $mantle = #222222
+        $crust = #11111b
+        $shadow = #222222
+    }
+    if(theme == "Catppuccin"){
+        $rosewater = #f5e0dc
+        $flamingo = #f2cdcd
+        $pink = #f5c2e7
+        $mauve = #cba6f7
+        $red = #f38ba8
+        $maroon = #eba0ac
+        $peach = #fab387
+        $yellow = #f9e2af
+        $green = #a6e3a1
+        $teal = #94e2d5
+        $sky = #89dceb
+        $sapphire = #74c7ec
+        $lavender = #b4befe
+        $blue = #89b4fa
+        $bg-rosewater = #63281c
+        $bg-flamingo = #651a1a
+        $bg-pink = #6e1255
+        $bg-mauve = #3a0a75
+        $bg-red = #730c29
+        $bg-maroon = #691624
+        $bg-peach = #7a3205
+        $bg-yellow = #775409
+        $bg-green = #23621d
+        $bg-teal = #1b6458
+        $bg-sky = #125f6d
+        $bg-sapphire = #0f5270
+        $bg-lavender = #02127e
+        $bg-blue = #05327a
+        $text = #cdd6f4
+        $subtext1 = #bac2de
+        $subtext0 = #a6adc8
+        $overlay2 = #9399b2
+        $overlay1 = #7f849c
+        $overlay0 = #6c7086
+        $surface2 = #585b70
+        $surface1 = #45475a
+        $surface0 = #313244
+        $base = #1e1e2e
+        $mantle = #181825
+        $crust = #11111b
+        $shadow = #010409
+    }
+
+	.navbar-light{
+		background-color: $mantle !important;
+	}
+	.navbar-light .navbar-nav .nav-link{
+		color: $text;
+	}
+	.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+		color: $overlay1;
+	}
+	body{
+		background-color: $base;
+		color: $text;
+	}
+	body, .table{
+		color: $text;
+	}
+	.bg-success-light{
+		background-color: $bg-green;
+	}
+	.bg-danger-light{
+		background-color: $bg-red;
+	}
+	.bg-info-light{
+		background-color: $bg-blue;
+	}
+	.killed, .bg-killed, .bg-killed-light{
+		background-color: $surface0;   
+	}
+	.batch_commits{
+		background-color: $surface0;
+	}
+	.btn-default{
+		background-color: $surface2;
+		color: $text;
+		border-color: $surface1;
+	} 
+	.btn-info{
+		color: $text;
+		background-color: $bg-teal;
+		border-color: $bg-teal;
+	}	
+	.badge-info{
+		background-color: $bg-teal;
+		border-color: $bg-teal;
+	}
+	.badge-warning {
+		color: $text;
+		background-color: $bg-yellow;
+	}
+	a{
+		color: $subtext0;
+	}
+	a:hover{
+		color: $subtext1;
+	}
+	.text-success{
+		color: $green !important;
+	}
+
+	.text-danger{
+		color: $red !important;
+	}
+	.text-info{
+		color: $teal !important;
+	}
+	.btn-success.disabled, .btn-success:disabled{
+		color: $base;
+		background-color: $green;
+		border-color: $green;
+	}
+	.btn-info.disabled, .btn-info:disabled{
+		color: $base;
+		background-color: $blue;
+		border-color: $blue;
+	}
+	.btn-danger.disabled, .btn-danger:disabled{
+		color: $base;
+		background-color: $red;
+		border-color: $red;
+	}
+	.btn.disabled, .btn:disabled{
+		opacity: 1;
+	}
 }
