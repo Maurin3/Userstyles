@@ -2,7 +2,7 @@
 @name         Dark Odoo Docs
 @description  Dark theme for Odoo Docs.
 @namespace    https://github.com/Maurin3
-@version      2.0.4
+@version      2.0.5
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -203,6 +203,19 @@
     #wrap main .alert.alert-exercise > h3,
     #wrap main .alert.alert-exercise > .h3 {
         color: #ddd;
+    }
+    
+    #wrap main .alert.alert-example {
+        border-color: #0faf36;
+        background-color: #192c1d;
+        color: #eef4ef;
+    }
+    
+     #wrap main .alert.alert-example > .alert-title,
+    #wrap main .alert.alert-example > h3,
+    #wrap main .alert.alert-example > .h3,
+    #wrap main .alert.alert-example a {
+        color: #85b290;
     }
 
     /* Code */
