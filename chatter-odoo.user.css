@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name         Chatter Odoo
+@description  Make chatter in unified style on odoo.com.
+@namespace    https://github.com/Maurin3
+@version      1.0.0
+@author       Maurin3
+@homepageURL  https://github.com/Maurin3/Userstyles
+@supportURL   https://github.com/Maurin3/Userstyles/issues
+@updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/chatter-odoo.user.css
+==/UserStyle== */
+
+@-moz-document domain("*.odoo.com"),
+domain("odoo.com") {
+    .o-discussion .o_Message_content *:not(li):not(li div) *{
+        font-family: inherit !important;
+        color: inherit !important;
+        background-color: inherit !important;
+        font-size: inherit !important;
+    }
+
+    .o-discussion .o_Message_content *:not(li):not(li div) a{
+        color: #01666b !important;
+    }
+    
+    head:has(link[data-asset-bundle="web.dark_mode_assets_backend"]) + body .o-discussion .o_Message_content *:not(li):not(li div) a{
+        color: #00DAC5 !important;
+    }
+
+}
