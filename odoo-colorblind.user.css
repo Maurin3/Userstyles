@@ -2,7 +2,7 @@
 @name         Odoo for Colorblind people
 @description  Change some colors in Odoo for people who suffers from colour blindness.
 @namespace    https://github.com/Maurin3
-@version      1.0.1
+@version      1.0.2
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -65,6 +65,18 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web*"){
 }
 
 .o_Activity_dueDateText.o-today{
+    color: #756e5c !important;
+}
+
+.text-success{
+    color: #0088FF !important;
+}
+
+.text-danger{
+    color: #C38000 !important;
+}
+
+.text-warning{
     color: #756e5c !important;
 }
 
