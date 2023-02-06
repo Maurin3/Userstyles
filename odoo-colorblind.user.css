@@ -2,7 +2,7 @@
 @name         Odoo for Colorblind people
 @description  Change some colors in Odoo for people who suffers from colour blindness.
 @namespace    https://github.com/Maurin3
-@version      1.0.3
+@version      1.0.4
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -78,6 +78,18 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web*"){
 
 .text-warning{
     color: #756e5c !important;
+}
+
+.text-bg-warning{
+    background-color: RGBA(117, 110, 92, var(--bg-opacity, 1)) !important;
+}
+
+.text-bg-success{
+    background-color: RGBA(16, 125, 255, var(--bg-opacity, 1)) !important;
+}
+
+.text-bg-danger{
+    background-color: RGBA(195, 128, 0, var(--bg-opacity, 1)) !important;
 }
 
 }
