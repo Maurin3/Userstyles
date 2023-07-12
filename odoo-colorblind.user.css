@@ -2,7 +2,7 @@
 @name         Odoo for Colorblind people
 @description  Change some colors in Odoo for people who suffers from colour blindness.
 @namespace    https://github.com/Maurin3
-@version      1.0.4
+@version      1.0.5
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -40,6 +40,37 @@ regexp("https:\\/\\/([-a-z0-9]+)(\\.dev)?\\.odoo\\.com\\/web*"){
 
 .bg-warning-full{
     background-color: #756e5c !important;
+}
+.btn-outline-success{
+    color: #0088FF !important;
+    border-color: #0088FF !important;
+}
+.btn-outline-success:hover{
+    color: #000 !important;
+    background-color: #0088FF !important;
+}
+    
+.btn-outline-danger{
+    color: #C38000 !important;
+    border-color: #C38000 !important;
+}
+.btn-outline-danger:hover{
+    color: #000 !important;
+    background-color: #C38000 !important;
+}
+    
+.btn-outline-warning:hover{
+    background-color: #756e5c !important;
+    color: #000 !important;
+}
+    
+.btn-outline-warning{
+    color: #756e5c !important;
+    border-color: #756e5c !important;
+}
+    
+.o_field_project_task_state_selection .o_status_changes_requested{
+    color: #756e5c !important
 }
 
 /* Activities in kanban */
