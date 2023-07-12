@@ -19,6 +19,7 @@ Some useful userstyles :wink:
 | Dark Odoo                      | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][doo-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.1-C4246A.svg "Version 1.0.1") |
 | Dark Odoo SH                   | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.1.0-C4246A.svg "Version 1.1.0") |
 | Chatter Odoo                   | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][cho-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.3-C4246A.svg "Version 1.0.3") |
+| Tags Odoo                     | [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)][tgo-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.0-C4246A.svg "Version 1.0.0") |
 
 [dpd-raw]: https://github.com/Maurin3/Userstyles/raw/master/dark-python-docs.user.css
 [dst-raw]: https://github.com/Maurin3/Userstyles/raw/master/dark-stylus.user.css
@@ -29,6 +30,7 @@ Some useful userstyles :wink:
 [doo-raw]: https://github.com/Maurin3/Userstyles/raw/master/dark-odoo.user.css
 [dsh-raw]: https://github.com/Maurin3/Userstyles/raw/master/dark-odoo-sh.user.css
 [cho-raw]: https://github.com/Maurin3/Userstyles/raw/master/chatter-odoo.user.css
+[tgo-raw]: https://github.com/Maurin3/Userstyles/raw/master/tags-odoo.user.css
 
 ## Updates
 
