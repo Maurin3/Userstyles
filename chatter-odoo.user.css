@@ -2,7 +2,7 @@
 @name         Chatter Odoo
 @description  Make chatter in unified style on odoo.com.
 @namespace    https://github.com/Maurin3
-@version      1.0.2
+@version      1.0.3
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -12,6 +12,13 @@
 @-moz-document domain("*.odoo.com"),
 domain("odoo.com") {
     .o_MessageView_prettyBody *:not(a):not(.fa){
+        color: inherit !important;
+        font-family: inherit !important;
+        background-color: inherit !important;
+        font-size: inherit !important;
+    }
+
+    .o-mail-Message-body  *:not(a):not(.fa){
         color: inherit !important;
         font-family: inherit !important;
         background-color: inherit !important;
