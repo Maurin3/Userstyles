@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Tags Odoo
 @namespace    https://github.com/Maurin3
-@version      1.0.1
+@version      1.0.2
 @description  Readable tags on odoo.com in both light and dark mode.
 @author       Maurin3
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -13,81 +13,81 @@
 .o_tag.o_tag_color_0, .o_tag.o_tag_color_0::after {
     --background-color: RGBA(166, 166, 166, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
-    --color: RGBA(166, 166, 166, var(--text-opacity, 1));
+    --color: RGBA(166, 166, 166 var(--text-opacity, 1));
         color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_1, .o_tag.o_tag_color_1::after {
+.o_tag.o_tag_color_1, .o_tag.o_tag_color_1::after, .o_colorlist_item_color_1 {
     --background-color: RGBA(243, 77, 59, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(243, 77, 59, var(--text-opacity, 1));
     color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_2, .o_tag.o_tag_color_2::after{
+.o_tag.o_tag_color_2, .o_tag.o_tag_color_2::after, .o_colorlist_item_color_2{
     --background-color: RGBA(255, 102, 0, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(255, 102, 0, var(--text-opacity, 1));
     color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_3, .o_tag.o_tag_color_3::after {
+.o_tag.o_tag_color_3, .o_tag.o_tag_color_3::after, .o_colorlist_item_color_3 {
     --background-color: RGBA(175.75, 144.34722222, 14.25, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(175.75, 144.34722222, 14.25, var(--text-opacity, 1));
     color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_4, .o_tag.o_tag_color_4::after {
+.o_tag.o_tag_color_4, .o_tag.o_tag_color_4::after, .o_colorlist_item_color_4 {
     --background-color: RGBA(0, 191, 255, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(0, 191, 255, var(--text-opacity, 1));
     color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_5, .o_tag.o_tag_color_5::after {
+.o_tag.o_tag_color_5, .o_tag.o_tag_color_5::after, .o_colorlist_item_color_5 {
     --background-color: RGBA(232, 53, 155, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(232, 53, 155, var(--text-opacity, 1));
     color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_6, .o_tag.o_tag_color_6::after {
+.o_tag.o_tag_color_6, .o_tag.o_tag_color_6::after, .o_colorlist_item_color_6 {
     --background-color: RGBA(187, 132, 93, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(187, 132, 93, var(--text-opacity, 1));
     color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_7, .o_tag.o_tag_color_7::after {
+.o_tag.o_tag_color_7, .o_tag.o_tag_color_7::after, .o_colorlist_item_color_7 {
     --background-color: RGBA(0, 204, 204, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(0, 204, 204, var(--text-opacity, 1));
     color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_8, .o_tag.o_tag_color_8::after {
+.o_tag.o_tag_color_8, .o_tag.o_tag_color_8::after, .o_colorlist_item_color_8 {
     --background-color: RGBA(80, 122, 225, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(80, 122, 225, var(--text-opacity, 1));
     color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_9, .o_tag.o_tag_color_9::after {
+.o_tag.o_tag_color_9, .o_tag.o_tag_color_9::after, .o_colorlist_item_color_9 {
     --background-color: RGBA(232, 54, 122, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(232, 54, 122, var(--text-opacity, 1));
     color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_10, .o_tag.o_tag_color_10::after {
+.o_tag.o_tag_color_10, .o_tag.o_tag_color_10::after, .o_colorlist_item_color_10 {
     --background-color: RGBA(12.975, 160.025, 93.55034247, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(12.975, 160.025, 93.55034247, var(--text-opacity, 1));
     color: var(--color) !important;
 }
 
-.o_tag.o_tag_color_11, .o_tag.o_tag_color_11::after {
+.o_tag.o_tag_color_11, .o_tag.o_tag_color_11::after, .o_colorlist_item_color_11 {
     --background-color: RGBA(175, 101, 236, var(--bg-opacity, 0.25));
     background-color: var(--background-color) !important;
     --color: RGBA(175, 101, 236, var(--text-opacity, 1));
