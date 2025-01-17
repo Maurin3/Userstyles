@@ -2,6 +2,16 @@
 @name         Dark Odoo SH
 @description  Make odoo SH dark
 @namespace    https://github.com/Maurin3
+@version      1.1.1
+@author       Maurin3
+@homepageURL  https://github.com/Maurin3/Userstyles
+@supportURL   https://github.com/Maurin3/Userstyles/issues
+@updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-odoo-sh.user.css
+==/UserStyle== */
+/* ==UserStyle==
+@name         Dark Odoo SH
+@description  Make odoo SH dark
+@namespace    https://github.com/Maurin3
 @version      1.1.0
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
@@ -15,7 +25,7 @@
         color: #FFFFFF;
     }
     #wrapwrap{
-        background-color: #222222;
+        background-color: #1a1a1a;
     }
     h1, h2, h3, h4, h5{
         color: #FFFFFF;
@@ -47,7 +57,7 @@
     .o_project_title, body .text-black{
         color: #FFFFFF;
     }
-    .o_sh_projects_search  {
+    .o_sh_projects_search {
         color: initial;
     }
     .card {
@@ -66,6 +76,28 @@
     a.text-800:hover {
         color: #dee2e6 !important;
     }
+    .container {
+        background-color: #1a1a1a
+    }
+    fieldset, body{
+        color: #dee2e6 !important;    
+    }
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+        color: #E0E2E6;
+        background-color: #017e84;
+        border-color: #E0E2E6;
+    }
+    .btn-light:not(:disabled):not(.disabled):active, .o_form_view .o_statusbar_status .o_arrow_button:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .o_form_view .o_statusbar_status .o_arrow_button:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle, .o_form_view .o_statusbar_status .show > .dropdown-toggle.o_arrow_button:not(.disabled){
+        color: #f6f7fa;
+        background-color: #091124;
+        border-color: #091124;
+    }
+    .btn-secondary{
+        color: #091124;
+        background-color: white;
+        border-color: white;
+        color: #01666b !important;
+    }
     
     /* Home Page */
     .bg-gray-lighter > .container > div > div>  h1,.bg-gray-lighter > .container > div > div > h2, .bg-gray-lighter > .container > div > div > h3, .bg-gray-lighter > .container > div > div > h4, .bg-gray-lighter > .container > div > div > h5{
@@ -79,7 +111,7 @@
     
     /* Project/Branch History Page */
     .o_branch_history, .o_branch_history .o_tracking_date_separator .o_tracking_date {
-        background-color: #222222;
+        background-color: #1a1a1a;
         color: #FFFFFF;
     }
     .o_branch_history .o_tracking .o_tracking_commits .o_tracking_commit .o_tracking_commit_body{
@@ -93,10 +125,10 @@
     }
     .o_branch_history .o_sh_tracking_icon .gi,
     .o_branch_history .o_sh_tracking_icon .fa-stack{
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
     }
     .fa-inverse{
-        color: #222222;
+        color: #1a1a1a;
     }
     .o_branch_history .o_tracking:hover .o_sh_tracking_icon .gi{
         color: inherit !important;
@@ -116,7 +148,7 @@
         color: #f9f9f9 !important;
     }
     .dropdown-menu{
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
     }
     .dropdown-menu a {
         color: #FFFFFF !important;
@@ -144,7 +176,7 @@
     
     /* General Settings Page */
     .help-block {
-        background-color: #222222;
+        background-color: #1a1a1a;
         color: #999999;
     }
     .o_github_search_box .input-group-btn .btn{
@@ -152,7 +184,7 @@
         color: #FFFFFF !important;
     }
     .o_branch_settings_wrapper, .o_settings_wrapper {
-        background-color: #222222;
+        background-color: #1a1a1a;
         color: #FFFFFF;
     }
     .o_settings_section_body .alert-danger {
@@ -169,7 +201,7 @@
         background-color: #734d69;
     }
     .bg-white {
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
         color: #FFFFFF;
     }
     .alert-warning {
@@ -195,8 +227,9 @@
         background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
     }
     .custom-select > option{
-        background-color: #222222;
+        background-color: #1a1a1a;
     }
+    .dropdown .dropdown-menu .text-muted,
     .odoo_sh .text-muted{
         color: #a0aeb9 !important;
     }
@@ -221,16 +254,16 @@
         color: #FFFFFF;
     }
     .o_tracking_stage_change.small.text-uppercase{
-        color: #222222;
+        color: #1a1a1a;
     }
     .o_branch_history .js_history_item + .js_history_item{
-        border-color: #222222;
+        border-color: #1a1a1a;
     }
     .o_branch_history .o_tracking .o_tracking_commits .o_tracking_commit .o_tracking_commit_msg {
         white-space: normal !important;
     }
     .o_branch_settings, .o_branches_right_panel, .bg-100 {
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
         color: #FFFFFF;
     }
     .btn-light {
@@ -239,11 +272,11 @@
         box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.15), 0 1px 1px rgba(255, 255, 255, 0.075);
     }
     .btn-light:hover {
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
         color: #FFFFFF;
     }
     .input-group .input-group-addon {
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
         color: #FFFFFF !important;
     }
     
@@ -258,21 +291,21 @@
         background-color: #240f0f;
     }
     .o_sh_row .o_sh_panel_right{
-        background-color: #222222;
+        background-color: #1a1a1a;
         color: #FFFFFF;
     }
     .o_sh_row .o_sh_panel_left{
-        background-color: #222222;
+        background-color: #1a1a1a;
         color: #FFFFFF;
     }
     .o_builds_view .o_builds_card {
-        border-right: 1px solid #222222;
+        border-right: 1px solid #1a1a1a;
     }
     .o_builds_branch {
-        background-color: #222222;
+        background-color: #1a1a1a;
     }
     .bg-200 {
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
         color: #FFFFFF;
     }
     .card-body {
@@ -284,7 +317,7 @@
         color: #FFFFFF;
     }
     .bg-white-75 {
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
         color: #FFFFFF;
     }
     .o_builds_view .o_builds_card .o_builds_info pre{
@@ -297,13 +330,18 @@
     .bg-200.border-bottom.border-top{
         background-color: #1b1b1b !important;
     }
+    .btn-fill-light.disabled, .disabled.btn-light, .btn-fill-light:disabled, .btn-fill-light.o_wysiwyg_loader, .btn-light:disabled, .btn-light.o_wysiwyg_loader{
+        color: #747474 !important;
+        background-color: #383838;
+        border-color: #383838;
+    }
     
     /* Create Project Page */
     .o_location .panel label.control-label {
         color: #bfbfbf;
     }
     .panel, .panel .thumbnail, .panel .form-control {
-        background-color: #222222;
+        background-color: #1a1a1a;
         color: #bfbfbf;
     }
     .well {
@@ -334,16 +372,16 @@
     html[stylus-iframe$="https://www.odoo.sh"] .o_sh_iframe_tab,
     html[stylus-iframe$="https://www.odoo.sh"] body,
     html[stylus-iframe$="https://www.odoo.sh"] .o_sh_iframe_tab body{
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
     }
     html[stylus-iframe$="https://www.odoo.sh"] .header{
-        background-color: #222222;
-        border-bottom: 2px solid #222222;
+        background-color: #1a1a1a;
+        border-bottom: 2px solid #1a1a1a;
         box-shadow: 0 0 6px #555;
         color:#dfdfdf;
     }
     html[stylus-iframe$="https://www.odoo.sh"] .o-logs{
-        background-color: #222222;
+        background-color: #1a1a1a;
         color: #dfdfdf;
     }
     
@@ -352,9 +390,9 @@
     .paas-worker-mail .paas-worker-messages-container,
     .paas-worker-header .navbar-default,
     .paas-worker-table-messages {
-        background-color: #222222;
+        background-color: #1a1a1a;
         color: #dfdfdf;
-        border-color : #222222;
+        border-color : #1a1a1a;
     }
     .table.table.table-condensed.paas-worker-table-messages{
         box-shadow: 0 0 6px #555;
@@ -363,18 +401,18 @@
         background-color: rgba(0, 0, 0, 0.25);
     }
     .paas-worker-message-headers .paas-worker-collapse-title a.collapsed{
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
     }
     .paas-worker-message-headers .paas-worker-collapse-title a i{
         color: #dfdfdf;
     }
     .nav-tabs .nav-link.active[href="#paas-worker-message-content-html"]{
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
         color: #dfdfdf;
-        border-color: #222222 #222222 #222222
+        border-color: #1a1a1a #1a1a1a #1a1a1a
     }
     .paas-worker-mail .paas-worker-message-display.o_sh_has_message .tab-content{
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
     }
     .tab-content #paas-worker-message-content-html.active{
         box-shadow: 0 0 10px #000000;
@@ -382,11 +420,11 @@
     
     .paas-worker-message-headers .paas-worker-collapse-title a,
     .paas-worker-message-headers .paas-worker-collapse-title a:before{
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
     }
     
     .o_branch_mail {
-        background-color: #222222;
+        background-color: #1a1a1a;
     }
     
     .o_branch_mail table.table.table-condensed.paas-master-table-messages > thead > tr.active > td, .o_branch_mail table.table.table-condensed.paas-master-table-messages > tbody > tr.active > td{
@@ -394,7 +432,7 @@
     }
     
     .o_branch_mail .paas-master-mail .paas-master-message-display.o_sh_has_message .paas-master-message-headers a{
-        background-color: #222222;
+        background-color: #1a1a1a;
         color: #dfdfdf !important;
     }
     
@@ -406,7 +444,7 @@
         color: #efefef;
     }
     .o_sh_status .o_sh_global_data_container {
-        background-color: #222222;
+        background-color: #1a1a1a;
     }
     
     /* Modals */
@@ -414,11 +452,11 @@
     .modal-title,
     .modal-body,
     .modal-footer {
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
         color: #dfdfdf !important;
     }
     .modal .btn-secondary{
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
         color: #dfdfdf !important;
     }
     pre{
@@ -438,15 +476,16 @@
     }
     
     .popover{
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
     }
     .popover-header{
         background-color: #000000;
         border-bottom: 1px solid #000000;
+        color: #FFFFFF !important;
     }
     .popover-body{
-        background-color: #222222 !important;
-        color: #ffffff;
+        background-color: #1a1a1a !important;
+        color: #ffffff !important;
     }
     .bs-popover-bottom > .arrow::after,
     .bs-popover-auto[x-placement^="bottom"] > .arrow::after,
@@ -504,16 +543,24 @@
     .o_sh_iframe_tab,
     body,
     .o_sh_iframe_tab body{
-        background-color: #222222 !important;
+        background-color: #1a1a1a !important;
     }
     .header{
-        background-color: #222222;
-        border-bottom: 2px solid #222222;
+        background-color: #1a1a1a;
+        border-bottom: 2px solid #1a1a1a;
         box-shadow: 0 0 6px #555;
         color:#dfdfdf;
     }
     .o-logs{
-        background-color: #222222;
+        background-color: #1a1a1a;
         color: #dfdfdf;
+    }
+    
+    .log-warning {
+        background-color: #8d6300;
+    }
+    
+    .log-error {
+        background-color: #9a0a00;
     }
 }
