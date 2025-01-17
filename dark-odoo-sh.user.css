@@ -2,17 +2,7 @@
 @name         Dark Odoo SH
 @description  Make odoo SH dark
 @namespace    https://github.com/Maurin3
-@version      1.1.1
-@author       Maurin3
-@homepageURL  https://github.com/Maurin3/Userstyles
-@supportURL   https://github.com/Maurin3/Userstyles/issues
-@updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-odoo-sh.user.css
-==/UserStyle== */
-/* ==UserStyle==
-@name         Dark Odoo SH
-@description  Make odoo SH dark
-@namespace    https://github.com/Maurin3
-@version      1.1.0
+@version      1.1.2
 @author       Maurin3
 @homepageURL  https://github.com/Maurin3/Userstyles
 @supportURL   https://github.com/Maurin3/Userstyles/issues
@@ -80,7 +70,7 @@
         background-color: #1a1a1a
     }
     fieldset, body{
-        color: #dee2e6 !important;    
+        color: #dee2e6 !important;
     }
     .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
         color: #E0E2E6;
@@ -103,6 +93,18 @@
     .bg-gray-lighter > .container > div > div>  h1,.bg-gray-lighter > .container > div > div > h2, .bg-gray-lighter > .container > div > div > h3, .bg-gray-lighter > .container > div > div > h4, .bg-gray-lighter > .container > div > div > h5{
         color: #21313a;
     }
+    .o_cc .dropdown-menu .dropdown-item, #wrapwrap.o_header_overlay > header:not(.o_header_affixed):not(.o_top_menu_collapse_shown):not(.o_header_sidebar) > .navbar .dropdown-menu .dropdown-item, .o_footer .dropdown-menu .dropdown-item, .navbar-light:where(:not(.bg-light)) .dropdown-menu .dropdown-item, .o_cc .dropdown-menu .dropdown-item h6, #wrapwrap.o_header_overlay > header:not(.o_header_affixed):not(.o_top_menu_collapse_shown):not(.o_header_sidebar) > .navbar .dropdown-menu .dropdown-item h6, .o_footer .dropdown-menu .dropdown-item h6, .navbar-light:where(:not(.bg-light)) .dropdown-menu .dropdown-item h6, .o_colored_level .o_cc .dropdown-menu .dropdown-item, .o_colored_level .o_cc .dropdown-menu .dropdown-item h6{
+        color: #FFFFFF !important;
+    }
+    
+    /* Header Project Page */
+    .dropdown-item:hover, .dropdown-menu a:hover, .dropdown-item:focus, .dropdown-menu a:focus{
+        background-color: #424242 !important;
+    }
+    .sh-bg-blue-darker{
+        background-color: #1a1a1a;
+    }
+    
     
     /* Header Project Page */
     .dropdown-item:hover, .dropdown-menu a:hover, .dropdown-item:focus, .dropdown-menu a:focus{
