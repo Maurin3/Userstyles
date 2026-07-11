@@ -1,568 +1,303 @@
 /* ==UserStyle==
-@name         Dark Odoo SH
-@description  Make odoo SH dark
-@namespace    https://github.com/Maurin3
-@version      1.1.2
-@author       Maurin3
-@homepageURL  https://github.com/Maurin3/Userstyles
-@supportURL   https://github.com/Maurin3/Userstyles/issues
-@updateURL    https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-odoo-sh.user.css
+@name           Dark Odoo SH
+@description    Make odoo SH dark
+@namespace      https://github.com/Maurin3
+@version        2.1.0
+@author         Maurin3
+@homepageURL    https://github.com/Maurin3/Userstyles
+@supportURL     https://github.com/Maurin3/Userstyles/issues
+@updateURL      https://raw.githubusercontent.com/Maurin3/Userstyles/master/dark-odoo-sh.user.css
+@preprocessor   stylus
+@var select theme "Theme" ["Dark", "Catppuccin"]
 ==/UserStyle== */
+
+if (theme == "Dark"){
+    $bg-color-darker = #222222
+    $bg-color = #333333
+    $bg-color-lighter = #272727
+    $color = #ccc
+    $bg-red = #590000
+    $bg-yellow = #584201
+    $bg-green = #154800
+    $bg-grey = #9399b2
+    $bg-text-grey = #272727
+}
+if(theme == "Catppuccin"){
+    $bg-color-darker = #181825
+    $bg-color = #1e1e2e
+    $bg-color-lighter = #313244
+    $color = #cdd6f4
+    $bg-red = rgba(152, 8, 29, .25)
+    $bg-yellow = #775409
+    $bg-green = rgba(9, 114, 0, .25)
+    $bg-grey = #9399b2
+    $bg-text-grey = #313244
+}
 @-moz-document url-prefix("https://www.odoo.sh") {
-    /* General */
+    /* ==== General ==== */
     main{
-        background-color: #1a1a1a;
-        color: #FFFFFF;
-    }
-    #wrapwrap{
-        background-color: #1a1a1a;
-    }
-    h1, h2, h3, h4, h5{
-        color: #FFFFFF;
-    }
-    a:hover{
-        color: #00b3b0;
-    }
-    .btn-link, a {
-        color: #bfbfbf;
-    }
-    ::placeholder {
-        color: #CCCCCC !important;
-        opacity: 1; /* Firefox */
-    }
-    .form-control:disabled, .form-control.o_wysiwyg_loader, .form-control[readonly]{
-        background-color: #555;
+        background-color: $bg-color-darker;
     }
     
-    /* Projects Page */
-    .o_sh_projects_cards > .o_project_cards > .o_project_create_new > a > .o_project_card{
-        background-color: #1a1a1a;
-        color: #FFFFFF;
+    /* ---- Main navbar ---- */
+    .js_usermenu{
+        background-color: $bg-color;
     }
-    .o_project_cards > .o_project_card_container > .o_project_card{
-        background-color: #1a1a1a;
-        color: #FFFFFF;
-        box-shadow: 0 1px 3px 0 #808080, 0 0 0 1px #808080;
+    .js_usermenu *:hover{
+        background-color: $bg-color-darker !important;
     }
-    .o_project_title, body .text-black{
-        color: #FFFFFF;
-    }
-    .o_sh_projects_search {
-        color: initial;
-    }
-    .card {
-        background-color: #383838;
-        color: #FFFFFF;
-    }
-    .text-800, .btn {
-        color: #FFFFFF !important;
-    }
-    .table {
-        color: #dee2e6 !important;
-    }
-    hr {
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    a.text-800:hover {
-        color: #dee2e6 !important;
-    }
-    .container {
-        background-color: #1a1a1a
-    }
-    fieldset, body{
-        color: #dee2e6 !important;
-    }
-    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
-        color: #E0E2E6;
-        background-color: #017e84;
-        border-color: #E0E2E6;
-    }
-    .btn-light:not(:disabled):not(.disabled):active, .o_form_view .o_statusbar_status .o_arrow_button:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .o_form_view .o_statusbar_status .o_arrow_button:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle, .o_form_view .o_statusbar_status .show > .dropdown-toggle.o_arrow_button:not(.disabled){
-        color: #f6f7fa;
-        background-color: #091124;
-        border-color: #091124;
-    }
-    .btn-secondary{
-        color: #091124;
-        background-color: white;
-        border-color: white;
-        color: #01666b !important;
-    }
-    
-    /* Home Page */
-    .bg-gray-lighter > .container > div > div>  h1,.bg-gray-lighter > .container > div > div > h2, .bg-gray-lighter > .container > div > div > h3, .bg-gray-lighter > .container > div > div > h4, .bg-gray-lighter > .container > div > div > h5{
-        color: #21313a;
-    }
-    .o_cc .dropdown-menu .dropdown-item, #wrapwrap.o_header_overlay > header:not(.o_header_affixed):not(.o_top_menu_collapse_shown):not(.o_header_sidebar) > .navbar .dropdown-menu .dropdown-item, .o_footer .dropdown-menu .dropdown-item, .navbar-light:where(:not(.bg-light)) .dropdown-menu .dropdown-item, .o_cc .dropdown-menu .dropdown-item h6, #wrapwrap.o_header_overlay > header:not(.o_header_affixed):not(.o_top_menu_collapse_shown):not(.o_header_sidebar) > .navbar .dropdown-menu .dropdown-item h6, .o_footer .dropdown-menu .dropdown-item h6, .navbar-light:where(:not(.bg-light)) .dropdown-menu .dropdown-item h6, .o_colored_level .o_cc .dropdown-menu .dropdown-item, .o_colored_level .o_cc .dropdown-menu .dropdown-item h6{
-        color: #FFFFFF !important;
-    }
-    
-    /* Header Project Page */
-    .dropdown-item:hover, .dropdown-menu a:hover, .dropdown-item:focus, .dropdown-menu a:focus{
-        background-color: #424242 !important;
-    }
-    .sh-bg-blue-darker{
-        background-color: #1a1a1a;
+    #o_project, #o_logout{
+        color: $color !important;
     }
     
     
-    /* Header Project Page */
-    .dropdown-item:hover, .dropdown-menu a:hover, .dropdown-item:focus, .dropdown-menu a:focus{
-        background-color: #424242 !important;
+    /* ==== Project list ==== */
+    /* ---- Title ---- */
+    .o_sh_projects_list .h3{
+        color: $color;
+    }
+    .o_sh_projects_cards .h3{
+        color: $color;
+    }
+
+    /* ---- List ---- */
+    .o_sh_display_list th.bg-200,
+    .o_sh_display_list th.bg-200 .btn-light{
+        background-color: $bg-color !important;
+        border-color: $bg-color !important;
+        color: $color !important;
+    }
+    .o_sh_display_list th.bg-200:hover,
+    .o_sh_display_list th.bg-200 .btn-light:hover{
+        background-color: $bg-color-lighter !important;
+        border-color: $bg-color-lighter !important;
+        color: $color !important;
+    }
+
+    .o_sh_display_list table{
+        background-color: $bg-color !important;
+    }
+    .o_sh_display_list table,
+    .o_sh_display_list .text-700,
+    .o_sh_display_list .text-800{
+        color: $color !important;
+    }
+
+    /* ---- Cards ---- */
+    .o_project_create_new .o_project_card{
+        background-color: $bg-color !important;
+        color: $color !important;
+    }
+    .o_project_create_new .o_project_card:hover,
+    .o_project_create_new .o_project_card.bg-white-25:hover{
+        background-color: $bg-color-lighter !important;
+        color: $color !important;
+    }
+
+    .o_sh_display_kanban:not(.o_project_create_new){
+        background-color: $bg-color;
+        color: $color;
+    }
+    .o_sh_display_kanban:not(.o_project_create_new) .text-700,
+    .o_sh_display_kanban:not(.o_project_create_new) .text-800,
+    .o_sh_display_kanban:not(.o_project_create_new) .x-odoo-sh-project-name{
+        color: $color !important;
     }
     
-    /* Project/Branch History Page */
-    .o_branch_history, .o_branch_history .o_tracking_date_separator .o_tracking_date {
-        background-color: #1a1a1a;
-        color: #FFFFFF;
+    /* ==== Project form page ==== */
+    /* ---- Main navbar/notifications ---- */
+    .o_sh_notify{
+        background-color: $bg-color !important;
+        color: $color !important;
     }
-    .o_branch_history .o_tracking .o_tracking_commits .o_tracking_commit .o_tracking_commit_body{
-        white-space: break-spaces !important;
+    .o_sh_notify_filter,
+    .o_sh_notify_filter .btn{
+        background-color: $bg-color !important;
+        color: $color !important;
     }
-    .o_tracking_commit_body > .o_tracking_commit_body {
-        white-space: break-spaces !important;
+    .o_sh_notify_item{
+        background-color: $bg-color !important;
+        color: $color !important;
     }
-    .o_tracking_commits > .o_tracking_commit {
-        background-color: #444444 !important;
+    .o_sh_notify_item .text-muted{
+        color: $color !important;
     }
-    .o_branch_history .o_sh_tracking_icon .gi,
-    .o_branch_history .o_sh_tracking_icon .fa-stack{
-        background-color: #1a1a1a !important;
+    .o_sh_notify_item .btn-secondary{
+        color: $color !important;
+        background-color: $bg-color-darker !important;
     }
-    .fa-inverse{
-        color: #1a1a1a;
+    .o_sh_notify_item .btn-close{
+        color: $color !important;
+        background-color: $bg-color-darker !important;
     }
-    .o_branch_history .o_tracking:hover .o_sh_tracking_icon .gi{
-        color: inherit !important;
+    /* ---- Branches ---- */
+    /* **** History **** */
+    .o_branch_main_content .navbar{
+        background-color: $bg-color-darker !important;
     }
-    .list-group-item:not([class*='list-group-item-']):not(.active) {
-        color: #FFFFFF !important;
+    .o_branch_main_content .navbar .btn-light{
+        background-color: $bg-color !important;
+        color: $color !important;
     }
-    .btn-light.disabled {
-        color: #212529 !important;
+    .o_branch_main_content .navbar .btn-light:hover{
+        background-color: $bg-color-lighter !important;
+        color: $color !important;
     }
-    .o_branch_history .o_tracking:hover {
-        background-color: #4d4d4d;
-        border-color: #ced4da;
+
+    .o_branch_history,
+    .o_branch_history .o_sh_tracking_icon .gi{
+        background-color: $bg-color !important;
     }
-    a.bg-100:hover, a.bg-100:focus, button.bg-100:hover, button.bg-100:focus {
-        background-color: rgba(118,118,118,0.7) !important;
-        color: #f9f9f9 !important;
-    }
-    .dropdown-menu{
-        background-color: #1a1a1a !important;
-    }
-    .dropdown-menu a {
-        color: #FFFFFF !important;
-    }
-    .o_branch_buttons{
-        background-color: #3A404A !important;
-    }
-    .js_git_command {
-        background-color: #383838 !important;
-        color: #FFFFFF !important;
-    }
-    .gi-clippy:before {
-        content: "\e934";
-        color: #212529;
-    }
-    .o_git_command:hover .gi-clippy:before{
-        content: "\e934";
-        color: #FFFFFF;
+    .o_branch_history .o_sh_tracking_history:before,
+    .o_branch_history .o_sh_tracking_icon .gi{
+        color: $color !important;
     }
     
-    /* Upgrade mode */
-    .timeline ul.checkout-bar li.active{
-        color: #05ffe8;
+    .o_tracking_date{
+        color: $color !important;
+    }
+    .o_tracking,
+    .o_tracking_commits .o_tracking_commit{
+        background-color: $bg-color-darker !important;
+        color: $color !important;
+    }
+    .o_tracking_info .text-muted,
+    .o_tracking_stage_change_box .text-muted{
+        color: $color !important;
+    }
+    .o_tracking_commits .o_tracking_commit .gi,
+    .o_tracking_commits .o_tracking_commit .o_tracking_commit_url{
+        color: $color !important;
+    }
+    .o_tracking_commits_more_link small,
+    .o_tracking_commits_more_link .gi{
+        color: $color !important;
+    }
+    .o_history_status .text-muted{
+        color: $color !important;
+    }
+    .o_tracking_commits .o_tracking_commit:hover{
+        background-color: $bg-color-lighter !important;
+        color: $color !important;
     }
     
-    /* General Settings Page */
-    .help-block {
-        background-color: #1a1a1a;
-        color: #999999;
+    /* **** Upgrade **** */
+    .o_branch_settings{
+        background-color: $bg-color !important;
     }
-    .o_github_search_box .input-group-btn .btn{
-        background-color: #00A09D !important;
-        color: #FFFFFF !important;
-    }
-    .o_branch_settings_wrapper, .o_settings_wrapper {
-        background-color: #1a1a1a;
-        color: #FFFFFF;
-    }
-    .o_settings_section_body .alert-danger {
-        background-color: #2e2705;
-        color: #bfbfbf;
-    }
-    .o_settings_wrapper .o_github_search_result {
-        background-color: #000000;
-    }
-    .o_settings_wrapper .o_github_search_result li:hover {
-        background-color: rgba(0, 0, 0, 0.25);
-    }
-    .o_settings_code.btn.btn-secondary {
-        background-color: #734d69;
-    }
-    .bg-white {
-        background-color: #1a1a1a !important;
-        color: #FFFFFF;
-    }
-    .alert-warning {
-        background-color: #2e2705;
-        color: #f9e7cc;
-    }
-    .alert-info {
-        background-color: #0e1f25;
-        color: #d1ecf1;
-    }
-    .alert-danger {
-        color: #f8d7da;
-        background-color: #240f0f;
-    }
-    .odoo_sh .help-block{
-        color: #9eb0ce;
-    }
-    .custom-select{
-        background-color: #2f2f2f;
-        border: 1px solid #ced4da;
-        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-        color: #a9b8c7;
-        background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
-    }
-    .custom-select > option{
-        background-color: #1a1a1a;
-    }
-    .dropdown .dropdown-menu .text-muted,
-    .odoo_sh .text-muted{
-        color: #a0aeb9 !important;
-    }
-    .o_branch_no_build{
-        color: #bfbfbf;
+    .o_branch_settings .active .timeline-title{
+        color: $color !important;
     }
     
-    /* Branch Monitoring Page */
-    .alert-secondary {
-        color: #d1dee4;
-        background-color: #2f4752;
-        border-color: #d1dee4;
+    /* ---- Builds ---- */
+    .o_builds_view,
+    .o_branches_searchbar,
+    .o_branches_searchbar .o_branches_searchbar_icon,
+    .o_branches_searchbar input{
+        background-color: $bg-color !important;
+    }
+    .o_branches_searchbar,
+    .o_branches_searchbar .o_branches_searchbar_icon .gi,
+    .o_branches_searchbar input::placeholder{
+        color: $color !important;
     }
     
-    img.ml-auto, img.mx-auto{
-        border-radius: 75px;
+    .o_builds_view .bg-200{
+        background-color: $bg-color-darker !important;
+        color: $color !important;
     }
     
-    /* Branch Settings Page */
-    .o_branch_settings_wrapper .o_settings_pricing .table tr:nth-last-child(n + 1) td, .o_settings_wrapper .o_settings_pricing .table tr:nth-last-child(n + 1) td, .list-group-item, .o_settings_wrapper .o_github_search_box .form-control  {
-        background-color: #383838;
-        color: #FFFFFF;
+    .o_sh_build_panel_left{
+        background-color: $bg-color !important;
+        color: $color !important;
     }
-    .o_tracking_stage_change.small.text-uppercase{
-        color: #1a1a1a;
-    }
-    .o_branch_history .js_history_item + .js_history_item{
-        border-color: #1a1a1a;
-    }
-    .o_branch_history .o_tracking .o_tracking_commits .o_tracking_commit .o_tracking_commit_msg {
-        white-space: normal !important;
-    }
-    .o_branch_settings, .o_branches_right_panel, .bg-100 {
-        background-color: #1a1a1a !important;
-        color: #FFFFFF;
-    }
-    .btn-light {
-        background-color: #383838;
-        color: #FFFFFF;
-        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.15), 0 1px 1px rgba(255, 255, 255, 0.075);
-    }
-    .btn-light:hover {
-        background-color: #1a1a1a !important;
-        color: #FFFFFF;
-    }
-    .input-group .input-group-addon {
-        background-color: #1a1a1a !important;
-        color: #FFFFFF !important;
+    .o_sh_build_panel_left .btn-light{
+        background-color: $bg-color-darker !important;
+        color: $color !important;
     }
     
-    /* Builds Page */
-    .o_builds_view .o_builds_card.o_success {
-        background-color: #15250e;
+    .o_builds_card,
+    .o_builds_card .text-muted{
+        color: $color !important;
     }
-    .o_builds_view .o_builds_card.o_warning {
-        background-color: #2e2705;
+    
+    .o_builds_card.o_failed,
+    .o_builds_card.o_failed .card-body,
+    .o_builds_card.o_failed .o_build_footer{
+        background-color: $bg-red !important;
     }
-    .o_builds_view .o_builds_card.o_failed {
-        background-color: #240f0f;
+
+    .o_builds_card.o_warning,
+    .o_builds_card.o_warning .card-body,
+    .o_builds_card.o_warning .o_build_footer{
+        background-color: $bg-yellow !important;
     }
-    .o_sh_row .o_sh_panel_right{
-        background-color: #1a1a1a;
-        color: #FFFFFF;
+    
+    .o_builds_card.o_success,
+    .o_builds_card.o_success .card-body,
+    .o_builds_card.o_success .o_build_footer{
+        background-color: $bg-green !important;
     }
-    .o_sh_row .o_sh_panel_left{
-        background-color: #1a1a1a;
-        color: #FFFFFF;
-    }
-    .o_builds_view .o_builds_card {
-        border-right: 1px solid #1a1a1a;
-    }
-    .o_builds_branch {
-        background-color: #1a1a1a;
-    }
-    .bg-200 {
-        background-color: #1a1a1a !important;
-        color: #FFFFFF;
-    }
-    .card-body {
-        background-color:rgba(255, 255, 255, 0.1) !important;
-        color: #FFFFFF;
-    }
-    .bg-white-75 {
-        background-color: #4d4d4d !important;
-        color: #FFFFFF;
-    }
-    .bg-white-75 {
-        background-color: #1a1a1a !important;
-        color: #FFFFFF;
-    }
+    
     .o_builds_view .o_builds_card .o_builds_info pre{
-        background-color: rgba(255, 255, 255, 0.05) !important;
-        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.5) !important;
     }
-    .o_card_footer{
-        background-color: transparent !important;
+    .o_build_card_content .o_build_info_toggle .fa{
+        color: $color !important;
     }
-    .bg-200.border-bottom.border-top{
-        background-color: #1b1b1b !important;
+    .o_build_footer .btn-light,
+    .o_build_footer .btn-light .fa{
+        background-color: $bg-color !important;
+        border-color: $bg-color !important;
+        color: $color !important;
     }
-    .btn-fill-light.disabled, .disabled.btn-light, .btn-fill-light:disabled, .btn-fill-light.o_wysiwyg_loader, .btn-light:disabled, .btn-light.o_wysiwyg_loader{
-        color: #747474 !important;
-        background-color: #383838;
-        border-color: #383838;
-    }
-    
-    /* Create Project Page */
-    .o_location .panel label.control-label {
-        color: #bfbfbf;
-    }
-    .panel, .panel .thumbnail, .panel .form-control {
-        background-color: #1a1a1a;
-        color: #bfbfbf;
-    }
-    .well {
-        background-color: rgba(0,0,0,0.5);
-    }
-    .form-control option, .form-control{
-        background-color: #383838;
-        color: #bfbfbf !important;
-    }
-    .form-control:focus{
-        background-color: #383838;
-        color: #bfbfbf !important;
-    }
-    .text-700{
-        color: #bfbfbf !important;
-    }
-    .o_builds_view .border-bottom{
-        border-bottom: 1px solid rgba(255,255,255,0.5) !important
-    }
-    .o_builds_view .o_builds_card{
-        box-shadow: 0 -1px 0 0 rgba(255,255,255,0.5) ;
+    .o_sh_git_badge .bg-300{
+        background-color: $bg-grey !important;
+        color: $bg-text-grey !important;
     }
     
-    /* Branch Logs Page */
-    html[stylus-iframe$="https://www.odoo.sh"] .o_sh_log_form{
-        background-color: #222;
+    /* ---- Settings ---- */
+    .o_settings_wrapper{
+        background-color: $bg-color !important;
+        color: $color !important;
     }
-    html[stylus-iframe$="https://www.odoo.sh"] .o_sh_iframe_tab,
-    html[stylus-iframe$="https://www.odoo.sh"] body,
-    html[stylus-iframe$="https://www.odoo.sh"] .o_sh_iframe_tab body{
-        background-color: #1a1a1a !important;
+    .o_settings_wrapper .text-muted{
+        color: $color !important;
     }
-    html[stylus-iframe$="https://www.odoo.sh"] .header{
-        background-color: #1a1a1a;
-        border-bottom: 2px solid #1a1a1a;
-        box-shadow: 0 0 6px #555;
-        color:#dfdfdf;
+    .o_settings_section_body form .input-group-text{
+        background-color: $bg-color-darker !important;
+        color: $color !important;
     }
-    html[stylus-iframe$="https://www.odoo.sh"] .o-logs{
-        background-color: #1a1a1a;
-        color: #dfdfdf;
+    .o_settings_section_body form #project_name,
+    .o_settings_section_body .help-block{
+        color: $color !important;
     }
     
-    /* Branch Mail Page */
-    .paas-worker-mail,
-    .paas-worker-mail .paas-worker-messages-container,
-    .paas-worker-header .navbar-default,
-    .paas-worker-table-messages {
-        background-color: #1a1a1a;
-        color: #dfdfdf;
-        border-color : #1a1a1a;
+    .o_settings_section_body .o_sh_github_user,{
+        background-color: $bg-color !important;
+        color: $color !important;
     }
-    .table.table.table-condensed.paas-worker-table-messages{
-        box-shadow: 0 0 6px #555;
+    .o_settings_section_body .o_sh_github_user .o_github_access{
+        color: $color !important;
     }
-    .table-striped > tbody > tr:nth-of-type(odd) {
-        background-color: rgba(0, 0, 0, 0.25);
-    }
-    .paas-worker-message-headers .paas-worker-collapse-title a.collapsed{
-        background-color: #1a1a1a !important;
-    }
-    .paas-worker-message-headers .paas-worker-collapse-title a i{
-        color: #dfdfdf;
-    }
-    .nav-tabs .nav-link.active[href="#paas-worker-message-content-html"]{
-        background-color: #1a1a1a !important;
-        color: #dfdfdf;
-        border-color: #1a1a1a #1a1a1a #1a1a1a
-    }
-    .paas-worker-mail .paas-worker-message-display.o_sh_has_message .tab-content{
-        background-color: #1a1a1a !important;
-    }
-    .tab-content #paas-worker-message-content-html.active{
-        box-shadow: 0 0 10px #000000;
+    .o_settings_section_body .o_sh_github_user .o_github_access option{
+        color: $color !important;
+        background-color: $bg-color !important;
     }
     
-    .paas-worker-message-headers .paas-worker-collapse-title a,
-    .paas-worker-message-headers .paas-worker-collapse-title a:before{
-        background-color: #1a1a1a !important;
+    .o_settings_section_body .slider-tick-label{
+        color: $color !important;
     }
     
-    .o_branch_mail {
-        background-color: #1a1a1a;
+    .o_settings_section_body form input{
+        color: $color !important;
     }
     
-    .o_branch_mail table.table.table-condensed.paas-master-table-messages > thead > tr.active > td, .o_branch_mail table.table.table-condensed.paas-master-table-messages > tbody > tr.active > td{
-        background-color: #00A09D;
-    }
-    
-    .o_branch_mail .paas-master-mail .paas-master-message-display.o_sh_has_message .paas-master-message-headers a{
-        background-color: #1a1a1a;
-        color: #dfdfdf !important;
-    }
-    
-    /* Status Page */
-    .o_sh_status .o_sh_server_lists_container tbody > tr:first-child td:first-child  {
-        color: #efefef;
-    }
-    .o_sh_value.h1.text-default {
-        color: #efefef;
-    }
-    .o_sh_status .o_sh_global_data_container {
-        background-color: #1a1a1a;
-    }
-    
-    /* Modals */
-    .modal-header,
-    .modal-title,
-    .modal-body,
-    .modal-footer {
-        background-color: #1a1a1a !important;
-        color: #dfdfdf !important;
-    }
-    .modal .btn-secondary{
-        background-color: #1a1a1a !important;
-        color: #dfdfdf !important;
-    }
-    pre{
-        color: #FFFFFF !important;
-    }
-    body .modal.o_technical_modal .form-control{
-        border: 1px solid #d4d5d7;
-        color: #adadad;
-        background-color: #424242;
-    }
-    .o_sh_connect_as_search{
-        padding-bottom: 10px;
-    }
-    .close{
-        color: #ffffff;
-        text-shadow: 0 1px 0 #000000;
-    }
-    
-    .popover{
-        background-color: #1a1a1a !important;
-    }
-    .popover-header{
-        background-color: #000000;
-        border-bottom: 1px solid #000000;
-        color: #FFFFFF !important;
-    }
-    .popover-body{
-        background-color: #1a1a1a !important;
-        color: #ffffff !important;
-    }
-    .bs-popover-bottom > .arrow::after,
-    .bs-popover-auto[x-placement^="bottom"] > .arrow::after,
-    .bs-popover-bottom .popover-header::before, 
-    .bs-popover-auto[x-placement^="bottom"] .popover-header::before{
-        border-bottom-color: #000000;
-    }
-    
-    /* Graphana */
-    .css-vs8602{
-        border: 1px solid rgb(60, 60, 60);
-        background: rgb(0, 0, 0);
-        box-shadow: rgb(0 0 0) 0px 0px 20px;
-    }
-    
-    .css-1rtdf8o,
-    .css-1ieymqs-Label{
-        color: rgb(146, 146, 146);
-    }
-    
-    .css-gr0614{
-        background: rgb(0, 0, 0);
-    }
-    
-    .css-16j21rp{
-        border: 1px solid rgb(60, 60, 60);
-        background: rgb(0, 0, 0);
-        box-shadow: rgb(0 0 0) 0px 0px 20px;
-    }
-    
-    .css-10oov4z{
-        background: rgb(0, 0, 0);
-    }
-    
-    .css-10oov4z .react-calendar__navigation__label,
-    .css-10oov4z .react-calendar__navigation__arrow,
-    .css-10oov4z .react-calendar__navigation{
-        color: rgb(146, 146, 146);
-    }
-    
-    .css-1cuj4ez{
-        color: rgb(146, 146, 146);
-    }
-    
-    .css-j5nr4j:hover{
-        background: rgb(49, 49, 49);
+    .o_settings_section_body .odoo-password-field-reveal input{
+        color: $color !important;
     }
 }
     
 @-moz-document regexp("^https:\/\/eup[a-z][0-9]*\.odoo\.com\/paas.*"){
-    /* Branch Logs Page */
-    .o_sh_log_form{
-        background-color: #222;
-    }
-    .o_sh_iframe_tab,
-    body,
-    .o_sh_iframe_tab body{
-        background-color: #1a1a1a !important;
-    }
-    .header{
-        background-color: #1a1a1a;
-        border-bottom: 2px solid #1a1a1a;
-        box-shadow: 0 0 6px #555;
-        color:#dfdfdf;
-    }
-    .o-logs{
-        background-color: #1a1a1a;
-        color: #dfdfdf;
-    }
-    
-    .log-warning {
-        background-color: #8d6300;
-    }
-    
-    .log-error {
-        background-color: #9a0a00;
-    }
+   
 }
