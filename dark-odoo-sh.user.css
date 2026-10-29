@@ -16,9 +16,13 @@ if (theme == "Dark"){
     $bg-color = #333333
     $bg-color-lighter = #272727
     $color = #ccc
-    $bg-red = #590000
-    $bg-yellow = #584201
-    $bg-green = #154800
+    $svg-color = '%23ccc'
+    $bg-red = rgb(44, 11, 14)
+    $text-red = #ea868f
+    $bg-yellow = rgb(51, 39, 1)
+    $text-yellow = #ffda6a
+    $bg-green = rgb(5, 27, 17)
+    $text-green = #75b798
     $bg-grey = #9399b2
     $bg-text-grey = #272727
 }
@@ -27,18 +31,24 @@ if(theme == "Catppuccin"){
     $bg-color = #1e1e2e
     $bg-color-lighter = #313244
     $color = #cdd6f4
-    $bg-red = rgba(152, 8, 29, .25)
-    $bg-yellow = #775409
-    $bg-green = rgba(9, 114, 0, .25)
+    $svg-color = '%23cdd6f4'
+    $bg-red = rgba(210, 15, 57, .125)
+    $text-red = #f38ba8
+    $bg-yellow = rgba(223, 142, 29, .125)
+    $text-yellow = #f9e2af
+    $bg-green = rgba(64, 160, 43, .125)
+    $text-green = #a6e3a1
     $bg-grey = #9399b2
     $bg-text-grey = #313244
 }
-@-moz-document url-prefix("https://www.odoo.sh") {
+@-moz-document url-prefix("https://www.odoo.sh/project"), url-prefix("https://www.odoo.sh/paas"), url-prefix("https://www.odoo.sh") {
     /* ==== General ==== */
     main{
         background-color: $bg-color-darker;
     }
-    
+    body{
+        background-color: $bg-color !important;
+    }
     /* ---- Main navbar ---- */
     .js_usermenu{
         background-color: $bg-color;
@@ -53,10 +63,11 @@ if(theme == "Catppuccin"){
     
     /* ==== Project list ==== */
     /* ---- Title ---- */
-    .o_sh_projects_list .h3{
-        color: $color;
+    .odoo_sh_app_body{
+        background-color: $bg-color-darker !important;
+        
     }
-    .o_sh_projects_cards .h3{
+    .o_project_container .h1{
         color: $color;
     }
 
@@ -130,11 +141,30 @@ if(theme == "Catppuccin"){
         color: $color !important;
         background-color: $bg-color-darker !important;
     }
+    .o_notification {
+        color: $color !important;
+        background-color: $bg-color !important;
+    }
+    .o_popover, 
+    .o_popover *{
+        color: $color !important;
+        background-color: $bg-color !important;
+    }
+    .bs-popover-bottom > .popover-arrow::after{
+        color: $color !important;
+        background-color: $bg-color !important;
+    }
+    .btn-close{
+        color: $color !important;
+        --btn-close-color: $color !important;
+        --btn-close-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='"$svg-color"'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>") !important;
+    }
     /* ---- Branches ---- */
     /* **** History **** */
     .o_branch_main_content .navbar{
         background-color: $bg-color-darker !important;
     }
+    .o_branch_main_view,
     .o_branch_main_content .navbar .btn-light{
         background-color: $bg-color !important;
         color: $color !important;
@@ -180,13 +210,49 @@ if(theme == "Catppuccin"){
         background-color: $bg-color-lighter !important;
         color: $color !important;
     }
-    
+    .o_error_dialog{
+        background-color: $bg-color-darker !important;
+        color: $color !important;
+    }
+    // TO REWORK
+    .btn-link{
+        color: #94e2d5 !important
+    }
+    .btn-primary{
+        background-color: #cba6f7 !important;
+        border-color: #cba6f7 !important;
+        color: #1e1e2e
+    }
+    .btn-primary:hover{
+        background-color: #1e1e2e !important;
+        border-color: #cba6f7 !important;
+        color: #cba6f7
+    }
+    .modal-body .bg-100{
+        background-color: #45475a !important;
+    }
+    .btn-success{
+        background-color: $text-green !important;
+        border-color: $text-green !important;
+    }
+    .btn-secondary{
+        background-color: $bg-grey !important;
+        border-color: $bg-grey !important;
+        color: $text-grey;
+    }
+    .o_branch_backups .navbar-text{
+        color: $color !important;
+    }
     /* **** Upgrade **** */
     .o_branch_settings{
         background-color: $bg-color !important;
     }
     .o_branch_settings .active .timeline-title{
         color: $color !important;
+    }
+    /* **** Backups **** */
+    .o_branch_backups_item .badge.bg-secondary{
+        background-color: #45475a !important;
     }
     
     /* ---- Builds ---- */
@@ -219,6 +285,12 @@ if(theme == "Catppuccin"){
     .o_builds_card,
     .o_builds_card .text-muted{
         color: $color !important;
+    }
+    
+    .o_builds_card.card,
+    .o_builds_card.card .o_build_card_content,
+    .o_builds_card.card .o_build_footer{
+        background-color: $bg-color !important;
     }
     
     .o_builds_card.o_failed,
@@ -254,6 +326,60 @@ if(theme == "Catppuccin"){
     .o_sh_git_badge .bg-300{
         background-color: $bg-grey !important;
         color: $bg-text-grey !important;
+    }
+    .o_technical_modal .modal-header,
+    .o_technical_modal .modal-body,
+    .o_technical_modal .modal-footer{
+        background-color: $bg-color !important;
+        color: $color !important;
+    }
+    .o_branch_success{
+        color: $text-green !important;
+    }
+    .o_branch_success{
+        color: $text-green !important;
+    }
+    .o_branch_warning{
+        color: $text-yellow !important;
+    }
+    .o_branch_failed{
+        color: $text-red !important;
+    }
+    /* ---- Status ---- */
+    .o_sh_status {
+        background-color: $bg-color-darker !important;
+        color: $color !important;
+    }
+    
+    .o_sh_status .o_sh_global_data_container .justify-content-center{
+        background-color: $bg-color-darker !important;
+        color: $color !important;
+    }
+    
+    .o_sh_status .o_sh_global_data_container .list-group-item,
+    .o_sh_server_lists_container .table-responsive th{
+        background-color: $bg-color !important;
+    }
+    .o_sh_metric.text-muted{
+        color: $color !important;
+    }
+    
+    .alert.alert-success{
+        background-color: $bg-green !important;
+        color: $text-green !important;
+    }
+    .alert.alert-warning{
+        background-color: $bg-yellow !important;
+        color: $text-yellow !important;
+    }
+    .text-success{
+        color: $text-green !important;
+    }
+    .text-warning{
+        color: $text-yellow !important;
+    }
+    .text-danger{
+        color: $text-red !important;
     }
     
     /* ---- Settings ---- */
@@ -296,8 +422,15 @@ if(theme == "Catppuccin"){
     .o_settings_section_body .odoo-password-field-reveal input{
         color: $color !important;
     }
-}
-    
-@-moz-document regexp("^https:\/\/eup[a-z][0-9]*\.odoo\.com\/paas.*"){
-   
+    .o_settings_item .alert-warning{
+        background-color: $bg-yellow !important;
+        color: $text-yellow !important;
+    }
+    #o_submodules_list *{
+        color: $color !important;
+        background-color: $bg-color-lighter !important;
+    }
+    #o_submodules_list .o_word_break_all{
+        color: $text-red !important;
+    }
 }
